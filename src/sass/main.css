@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap");
+:root {
+  /*
+    FONTS TO IMPORT:
+    HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" rel="stylesheet">
+
+  CSS -->
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap');
+  */
+  --fs-200: 0.5rem;
+  --fs-300: 0.75rem;
+  --fs-325: 0.75rem;
+  --fs-350: 0.75rem;
+  --fs-375: 0.875rem;
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-550: 1.125rem;
+  --fs-600: 1.25rem;
+  --fs-700: 1.625rem;
+  --fs-750: 1.75rem;
+  --fs-800: 2.125rem;
+  --fs-850: 2.25rem;
+  --fs-900: 3rem;
+  --ff-primary: "DM Sans", sans-serif;
+  --ff-header: "Titan One", cursive;
+  --bg-white: #fff;
+  --bg-gray: #fafafa;
+  --bg-pink: #ffb8ca;
+  --bg-pink-light: #fff5f6;
+  --bg-pink-dark: #e17992;
+  --bg-beige: #f0d1a5;
+  --bg-green: #c2e297;
+  --text-white: #fff;
+  --text-pink: #d41443;
+  --text-pink-light: #ffa5ba;
+  --text-black: #000;
+  --text-gray: #907e82;
+  --stroke: #e1e1e1;
+  --shadow: rgba(212, 20, 67, 0.1);
+  --box-shadow: 0px, 8px, 30px, var(--shadow);
+  --box-radius: 1.5rem;
+  --button-radius: 1.375rem;
+  --pd-container: 1.25rem;
+}
+
+@media (min-width: 48em) {
+  :root {
+    --pd-container: 2.125rem;
+    --fs-325: 0.875rem;
+    --fs-350: 1rem;
+    --fs-375: 1rem;
+    --fs-550: 1.625rem;
+    --fs-700: 1.375rem;
+    --fs-800: 3rem;
+    --fs-850: 3rem;
+    --fs-900: 2.125rem;
+  }
+}
+@media (min-width: 64em) {
+  :root {
+    --pd-container: 7.25rem;
+    --fs-200: 0.875rem;
+    --fs-300: 0.875rem;
+    --fs-325: 1rem;
+    --fs-375: 1.25rem;
+    --fs-400: 1rem;
+    --fs-550: 1.875rem;
+    --fs-600: 1.875rem;
+    --fs-700: 2.375rem;
+    --fs-750: 2.875rem;
+    --fs-800: 3.625rem;
+    --fs-850: 3.625rem;
+    --fs-900: 3.625rem;
+  }
+}
+.header-550 {
+  font-size: var(--fs-550);
+  color: var(--text-pink-light);
+  font-weight: 400;
+  line-height: 1.145;
+  font-family: var(--ff-header);
+}
+
+.header-600 {
+  font-size: var(--fs-600);
+  color: var(--text-white);
+  font-weight: 400;
+  line-height: 1.145;
+  font-family: var(--ff-header);
+  letter-spacing: 4%;
+}
+
+.header-700 {
+  font-size: var(--fs-700);
+  color: var(--text-white);
+  font-weight: 400;
+  line-height: 1.145;
+  font-family: var(--ff-header);
+  letter-spacing: 4%;
+}
+
+.header-750 {
+  font-size: var(--fs-750);
+  color: var(--text-pink);
+  font-weight: 400;
+  line-height: 1.145;
+  font-family: var(--ff-header);
+  letter-spacing: 4%;
+}
+
+.header-800 {
+  font-size: var(--fs-800);
+  color: var(--text-pink);
+  font-weight: 400;
+  line-height: 1.145;
+  font-family: var(--ff-header);
+  letter-spacing: 4%;
+}
+
+.header-850 {
+  font-size: var(--fs-850);
+  color: var(--text-pink);
+  font-weight: 400;
+  line-height: 1.145;
+  font-family: var(--ff-header);
+  letter-spacing: 4%;
+}
+
+.header-900 {
+  font-size: var(--fs-900);
+  color: var(--text-pink);
+  font-weight: 400;
+  line-height: 0.9;
+  font-family: var(--ff-header);
+}
+
+.text-200 {
+  font-size: var(--fs-200);
+  color: var(--text-white);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text-300 {
+  font-size: var(--fs-300);
+  color: var(--text-gray);
+  font-weight: 500;
+  line-height: 1.62;
+}
+
+.text-325 {
+  font-size: var(--fs-325);
+  color: var(--text-black);
+  font-weight: 500;
+  line-height: 1.62;
+}
+.text-325--quote {
+  line-height: 2.55;
+}
+.text-325--city {
+  letter-spacing: 4%;
+}
+.text-325--address {
+  color: var(--text-gray);
+}
+.text-325--hours {
+  color: var(--text-pink-light);
+}
+.text-325--contact {
+  font-weight: 700;
+}
+.text-325--phone {
+  color: var(--text-pink);
+}
+
+.text-350 {
+  font-size: var(--fs-350);
+  color: var(--text-white);
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 4%;
+}
+
+.text-375 {
+  font-size: var(--fs-375);
+  color: var(--text-black);
+  font-weight: 500;
+  line-height: 1.86;
+}
+
+.text-400 {
+  font-size: var(--fs-400);
+  color: var(--text-white);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.text-400--products {
+  line-height: 1.52;
+  letter-spacing: 4%;
+}
+
+.text-copyright {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  font-weight: 700;
+  line-height: 1.52;
+}
+
+@media (min-width: 48em) {
+  .header-900 {
+    letter-spacing: 4%;
+  }
+  .text-300 {
+    line-height: 1.76;
+    letter-spacing: 4%;
+  }
+  .text-325 {
+    line-height: 1.76;
+  }
+  .text-325--quote {
+    line-height: 2.16;
+    letter-spacing: 4%;
+  }
+  .text-400--products {
+    line-height: 1.76;
+  }
+  .text-copyright {
+    line-height: 1.86;
+    letter-spacing: 2%;
+  }
+}
+@media (min-width: 64em) {
+  .text-200 {
+    line-height: 1.3;
+  }
+  .text-300 {
+    line-height: 1.94;
+  }
+  .text-325 {
+    letter-spacing: 4%;
+  }
+  .text-325--quote {
+    line-height: 1.86;
+  }
+}
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/demo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  font-family: var(--ff-primary);
+}/*# sourceMappingURL=main.css.map */

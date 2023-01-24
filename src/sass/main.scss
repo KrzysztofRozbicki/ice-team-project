@@ -4,4 +4,10 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@use '../sass/utils' as *;
 @import './example';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap');
+
+body {
+  font-family: var(--ff-primary);
+}
