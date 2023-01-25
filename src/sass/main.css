@@ -64,7 +64,7 @@
     --fs-900: 2.125rem;
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 80em) {
   :root {
     --pd-container: 7.25rem;
     --fs-200: 0.875rem;
@@ -237,7 +237,7 @@
     letter-spacing: 2%;
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 80em) {
   .text-200 {
     line-height: 1.3;
   }
