@@ -1,1 +1,243 @@
 @use '../utils' as *;
+
+.header {
+  margin: auto;
+  max-width: 768px;
+  position: relative;
+  padding: 6px 20px 160px;
+  background-color: var(--bg-pink-dark);
+  min-height: 502px; /* ----------------- ONLY FOR TESTING!! */
+  overflow: hidden;
+
+  &__circle-bg {
+    width: 346px;
+    height: 344px;
+    position: absolute;
+    top: 83px;
+    left: 36px;
+    border-radius: 50%;
+    background-color: pink;
+    transition: left 1250ms ease-in-out;
+    z-index: 0;
+  }
+
+  &__hero-ice-cream {
+    position: absolute;
+    bottom: 0;
+    left: 117px;
+    width: 171px;
+    height: auto;
+    display: block;
+  }
+
+  &__hero-girl {
+    display: hidden;
+    opacity: 0;
+  }
+
+  &__hero-milk {
+    display: none;
+  }
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+
+  &__links {
+    display: none;
+  }
+
+  &__button {
+    //   @include font-mixin($color-crimson, 700, 1rem, 1.31, 0em);
+    display: none;
+  }
+}
+
+// ======================== RESPONSIVE NAV BURGER START =====================
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  // background-color: $color-white;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}
+
+.menu-toggle {
+  // min-height: 12px;
+  // min-width: 20px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // margin-left: 10px;
+  // margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  // border-radius: 50%;
+  outline: none;
+  // color: $color-crimson;
+  transition: color 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    //   color: $color-white;
+  }
+}
+
+// ======================== RESPONSIVE NAV BURGER END =====================
+
+/* =============================== MEDIA =====================*/
+
+@media screen and (min-width: 768px) {
+  .header {
+    max-width: 768px;
+    min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
+    padding: 37px 34px 34px;
+
+    &__circle-bg {
+      width: 324px;
+      height: 332px;
+      top: 31px;
+      left: 307px;
+      transition: left 1250ms ease-in-out;
+    }
+
+    &__hero-ice-cream {
+      position: absolute;
+      bottom: 0;
+      left: 378px;
+      width: 143px;
+      height: auto;
+      display: block;
+    }
+
+    &__hero-girl {
+      display: initial;
+      position: absolute;
+      bottom: 0;
+      left: 566px;
+      width: 168px;
+      height: auto;
+      display: block;
+      opacity: 1;
+      transition: opacity 1000ms ease-in-out;
+    }
+
+    &__hero-milk {
+      display: initial;
+      position: absolute;
+      bottom: 28px;
+      left: 34px;
+      width: 124px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+  }
+
+  .nav {
+    // flex-shrink: 1;
+    gap: 30px;
+
+    &__button {
+      display: initial;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      width: 158px;
+      height: 44px;
+      border-radius: 22px;
+      border: none;
+      // box-shadow: inset $color-pink-dark 0 0 4px 2px;
+      transition: box-shadow 250ms ease-in-out;
+      // flex-shrink: 1;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        outline: none;
+        //   box-shadow: inset $color-pink-dark 0 0 0 0, $color-pink-dark 0 5px 15px 5px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    max-width: 1280px;
+    min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
+    padding: 37px 115px 56px 46px;
+
+    &__circle-bg {
+      width: 538px;
+      height: 538px;
+      top: 52px;
+      left: 475px;
+      transition: left 1250ms ease-in-out;
+    }
+
+    &__hero-ice-cream {
+      left: 594px;
+      width: 236px;
+      height: auto;
+      display: block;
+    }
+
+    &__hero-girl {
+      left: 878px;
+      width: 293px;
+      height: auto;
+      display: block;
+    }
+
+    &__hero-milk {
+      bottom: 44px;
+      left: 77px;
+      width: 188px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .nav {
+    &__links {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      gap: 35px;
+      // flex-shrink: 0;
+    }
+
+    &__link {
+      // @include font-mixin($color-white, 700, 1rem, 1.31, 0em);
+    }
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
