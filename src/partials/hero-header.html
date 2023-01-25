@@ -1,3 +1,118 @@
-<section>
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#"
+        ><img
+          width="199"
+          height="50"
+          src="images/hero/logo.png"
+          alt="Logo image"
+          srcset="
+            images/hero/logo.png    199w,
+            images/hero/logo@2x.png 398w,
+            images/hero/logo@3x.png 597w
+          "
+          sizes="(min-width:1280px) 199px, (min-width:768px) 398px, 597px"
+      /></a>
 
-</section>
+      <!-- -----------Responsive nav Burger-button start ------ -->
+
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <!-- <svg width="20" height="12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg> -->
+        <svg class="icon" width="20" height="12" fill="currentColor">
+          <use href="images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <!-- -----------Responsive nav Burger-button end--------- -->
+
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#">Home</a></li>
+        <li><a class="nav__link" href="#products">About us</a></li>
+        <li><a class="nav__link" href="#about-us">How it's made?</a></li>
+        <li><a class="nav__link" href="#gallery">Our products</a></li>
+        <li><a class="nav__link" href="#contacts">Contact</a></li>
+      </ul>
+      <button class="nav__button" type="button">Buy now</button>
+    </nav>
+    <div class="header__circle-bg"></div>
+    <img
+      class="header__hero-ice-cream"
+      width="171"
+      height="410"
+      src="images/hero/hero-ice-cream-mobile.png"
+      alt="Logo image"
+      srcset="
+        images/hero/hero-ice-cream-tablet.png     143w,
+        images/hero/hero-ice-cream-mobile.png     171w,
+        images/hero/hero-ice-cream-desktop.png    236w,
+        images/hero/hero-ice-cream-tablet@2x.png  286w,
+        images/hero/hero-ice-cream-mobile@2x.png  342w,
+        images/hero/hero-ice-cream-tablet@3x.png  429w,
+        images/hero/hero-ice-cream-desktop@2x.png 472w,
+        images/hero/hero-ice-cream-mobile@3x.png  513w,
+        images/hero/hero-ice-cream-desktop@3x.png 708w
+      "
+      sizes="(min-width:1280px) 236px, (min-width:768px) 143px, 171px"
+    />
+    <img
+      class="header__hero-girl"
+      width="168"
+      height="133"
+      src="images/hero/hero-girl-tablet.png"
+      alt="Logo image"
+      srcset="
+        images/hero/hero-girl-tablet.png     168w,
+        images/hero/hero-girl-desktop.png    293w,
+        images/hero/hero-girl-tablet@2x.png  336w,
+        images/hero/hero-girl-tablet@3x.png  504w,
+        images/hero/hero-girl-desktop@2x.png 586w,
+        images/hero/hero-girl-desktop@3x.png 879w
+      "
+      sizes="(min-width:1280px) 188px, 124px"
+    />
+    <img
+      class="header__hero-milk"
+      width="124"
+      height="126"
+      src="images/hero/hero-milk-tablet.png"
+      alt="Logo image"
+      srcset="
+        images/hero/hero-milk-tablet.png     124w,
+        images/hero/hero-milk-desktop.png    188w,
+        images/hero/hero-milk-tablet@2x.png  248w,
+        images/hero/hero-milk-tablet@3x.png  372w,
+        images/hero/hero-milk-desktop@2x.png 376w,
+        images/hero/hero-milk-desktop@3x.png 564w
+      "
+      sizes="(min-width:1280px) 293px, 168px"
+    />
+
+    <!-- -----------------Responsive nav START----------- -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg
+          class="asd"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="mobile-menu"></div>
+    </div>
+    <!-- -----------------Responsive nav END----------- -->
+  </header>
