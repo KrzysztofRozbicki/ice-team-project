@@ -9,7 +9,7 @@ Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en
 Jeden raz na projekt zainstalować wszystkie zalezności.
 
 ```shell
-npm ci
+npm i
 ```
 
 ### Praca
