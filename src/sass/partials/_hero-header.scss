@@ -14,7 +14,8 @@
     height: 344px;
     position: absolute;
     top: 83px;
-    left: 36px;
+    // left: 36px;
+    left: calc(100vw - 284px);
     border-radius: 50%;
     background-color: var(--text-pink-light);
     transition: left 1250ms ease-in-out;
@@ -24,7 +25,8 @@
   &__hero-ice-cream {
     position: absolute;
     bottom: 0;
-    left: 117px;
+    // left: 117px;
+    left: calc(100vw - 203px);
     width: 171px;
     height: auto;
     display: block;
