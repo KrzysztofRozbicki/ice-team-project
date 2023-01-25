@@ -1,1 +1,45 @@
 @use '../utils' as *;
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+    }
+  
+    &__titleFirst {
+        color: var(--text-pink-light);
+        font-family: var(--ff-header);
+        font-size: var(--fs-550);
+
+    }
+
+    &__titleSecond {
+        color: var(--text-pink);
+        font-family: var(--ff-header);
+        font-size: var(--fs-800);
+    }
+
+    &__picCow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    &__description {
+        max-width: 320px;
+    }
+    &__description-text1 {
+        color: var(--text-black);
+        font-family: var(--ff-primary); 
+        font-size: var(--fs-325);
+    }
+    &__description-text2 {
+        color: var(--text-gray);
+        font-family: var(--ff-primary); 
+        font-size: var(--fs-300);
+    }
+}
