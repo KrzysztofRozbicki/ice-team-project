@@ -2,9 +2,11 @@
 @use '../utils/variables' as *;
 
 .header {
+  margin: auto;
+  max-width: 768px;
   position: relative;
   padding: 6px 20px 160px;
-  background-color: --bg-pink;
+  background-color: rgb(255, 215, 222);
   min-height: 502px; /* ----------------- ONLY FOR TESTING!! */
   overflow: hidden;
 
@@ -15,7 +17,7 @@
     top: 83px;
     left: 36px;
     border-radius: 50%;
-    background-color: --bg-pink-dark;
+    background-color: pink;
     transition: left 1250ms ease-in-out;
     z-index: 0;
   }
@@ -111,6 +113,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
+    max-width: 768px;
     min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 34px 34px;
 
@@ -187,6 +190,7 @@
 
 @media screen and (min-width: 1280px) {
   .header {
+    max-width: 1280px;
     min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 115px 56px 46px;
 
