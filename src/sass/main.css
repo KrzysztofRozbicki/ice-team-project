@@ -49,6 +49,7 @@
   --box-radius: 1.5rem;
   --button-radius: 1.375rem;
   --pd-container: 1.25rem;
+  --device-screen: 30em;
 }
 
 @media (min-width: 48em) {
@@ -62,6 +63,7 @@
     --fs-800: 3rem;
     --fs-850: 3rem;
     --fs-900: 2.125rem;
+    --device-screen: 48em;
   }
 }
 @media (min-width: 80em) {
@@ -79,6 +81,7 @@
     --fs-800: 3.625rem;
     --fs-850: 3.625rem;
     --fs-900: 3.625rem;
+    --device-screen: 80em;
   }
 }
 .header-550 {
@@ -475,4 +478,10 @@
 
 body {
   font-family: var(--ff-primary);
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: var(--pd-container);
+  max-width: var(--device-screen);
 }/*# sourceMappingURL=main.css.map */

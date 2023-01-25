@@ -61,6 +61,10 @@ CSS -->
   //PADDING---------------
 
   --pd-container: 1.25rem; //20px  --main container
+
+  //MEDIA BREAKPOINTS
+
+  --device-screen: 30em;
 }
 
 //@MEDIA SIZES-------------------------------------
@@ -81,6 +85,7 @@ $desktop-size: 80em;
     --fs-800: 3rem; //    48px
     --fs-850: 3rem; //    48px
     --fs-900: 2.125rem; //34px
+    --device-screen: 48em;
   }
 }
 
@@ -99,5 +104,6 @@ $desktop-size: 80em;
     --fs-800: 3.625rem; //58px
     --fs-850: 3.625rem; //58px
     --fs-900: 3.625rem; //58px
+    --device-screen: 80em;
   }
 }
