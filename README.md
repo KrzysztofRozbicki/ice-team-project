@@ -1,5 +1,7 @@
 # parcel-project-template
 
+https://krzysztofrozbicki.github.io/projekt-grupa-2/
+
 ## Zalezności
 
 Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).
