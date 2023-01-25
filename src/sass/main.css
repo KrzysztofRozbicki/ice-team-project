@@ -380,11 +380,13 @@
     height: 44px;
     border-radius: 22px;
     border: none;
+    box-shadow: inset var(--text-pink-light) 0 0 4px 2px;
     transition: box-shadow 250ms ease-in-out;
   }
   .nav__button:hover, .nav__button:focus {
     cursor: pointer;
     outline: none;
+    box-shadow: inset var(--text-pink-light) 0 0 0 0, var(--text-pink-light) 0 5px 15px 5px;
   }
 }
 @media screen and (min-width: 1280px) {

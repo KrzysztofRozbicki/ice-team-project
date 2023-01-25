@@ -149,7 +149,7 @@
       height: 44px;
       border-radius: 22px;
       border: none;
-      // box-shadow: inset $color-pink-dark 0 0 4px 2px;
+      box-shadow: inset var(--text-pink-light) 0 0 4px 2px;
       transition: box-shadow 250ms ease-in-out;
       // flex-shrink: 1;
 
@@ -157,7 +157,7 @@
       &:focus {
         cursor: pointer;
         outline: none;
-        //   box-shadow: inset $color-pink-dark 0 0 0 0, $color-pink-dark 0 5px 15px 5px;
+        box-shadow: inset var(--text-pink-light) 0 0 0 0, var(--text-pink-light) 0 5px 15px 5px;
       }
     }
   }
