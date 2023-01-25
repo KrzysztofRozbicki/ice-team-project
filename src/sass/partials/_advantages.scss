@@ -1,4 +1,37 @@
 @use '../utils' as *;
-.advantages__item{
- list-style: none;
+@use '../utils/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap');
+* {
+  padding: 0;       
+  margin: 0;
+  box-sizing: border-box;
+}
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.advantages__wrapper {
+  max-width: 320px;
+  padding: 38px 70px 0 20px;
+  background-color: var(--bg-pink-light);
+}
+.advantages__list {
+  list-style: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000000;
+}
+.advantages__item--number {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1, 14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 }
