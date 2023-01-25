@@ -251,6 +251,9 @@
     line-height: 1.86;
   }
 }
+.advantages__item {
+  list-style: none;
+}
 
 .gallery {
   max-width: 80em;
@@ -265,7 +268,7 @@
   max-width: 768px;
   position: relative;
   padding: 6px 20px 160px;
-  background-color: var(--bg-pink-dark);
+  background-color: var(--bg-pink);
   min-height: 502px; /* ----------------- ONLY FOR TESTING!! */
   overflow: hidden;
 }
@@ -276,7 +279,7 @@
   top: 83px;
   left: 36px;
   border-radius: 50%;
-  background-color: pink;
+  background-color: var(--text-pink-light);
   transition: left 1250ms ease-in-out;
   z-index: 0;
 }
@@ -310,34 +313,19 @@
   display: none;
 }
 
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
-  z-index: 999;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-}
-.menu-container.is-open {
-  transform: translateX(0);
-}
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-}
-
 .menu-toggle {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
+  color: var(--text-pink);
   transition: color 250ms ease-in-out;
 }
+.menu-toggle:hover, .menu-toggle:focus {
+  color: var(--bg-white);
+}
+
 /* =============================== MEDIA =====================*/
 @media screen and (min-width: 768px) {
   .header {
