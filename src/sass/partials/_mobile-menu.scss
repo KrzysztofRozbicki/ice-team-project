@@ -37,11 +37,12 @@
   margin-top: 19px;
 
   & > li {
-    height: 42px;
     padding-left: 21px;
     border-bottom: 1px solid #e18298;
     display: flex;
     align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   & > li:first-child {
