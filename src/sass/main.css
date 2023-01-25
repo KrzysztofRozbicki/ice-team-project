@@ -95,7 +95,7 @@
   font-weight: 400;
   line-height: 1.145;
   font-family: var(--ff-header);
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 
 .header-700 {
@@ -104,7 +104,7 @@
   font-weight: 400;
   line-height: 1.145;
   font-family: var(--ff-header);
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 
 .header-750 {
@@ -113,7 +113,7 @@
   font-weight: 400;
   line-height: 1.145;
   font-family: var(--ff-header);
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 
 .header-800 {
@@ -122,7 +122,7 @@
   font-weight: 400;
   line-height: 1.145;
   font-family: var(--ff-header);
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 
 .header-850 {
@@ -131,7 +131,7 @@
   font-weight: 400;
   line-height: 1.145;
   font-family: var(--ff-header);
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 
 .header-900 {
@@ -166,7 +166,7 @@
   line-height: 2.55;
 }
 .text-325--city {
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 .text-325--address {
   color: var(--text-gray);
@@ -186,7 +186,7 @@
   color: var(--text-white);
   font-weight: 500;
   line-height: 1.86;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 
 .text-375 {
@@ -204,7 +204,7 @@
 }
 .text-400--products {
   line-height: 1.52;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 
 .text-copyright {
@@ -216,18 +216,18 @@
 
 @media (min-width: 48em) {
   .header-900 {
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
   }
   .text-300 {
     line-height: 1.76;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
   }
   .text-325 {
     line-height: 1.76;
   }
   .text-325--quote {
     line-height: 2.16;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
   }
   .text-400--products {
     line-height: 1.76;
@@ -245,7 +245,7 @@
     line-height: 1.94;
   }
   .text-325 {
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
   }
   .text-325--quote {
     line-height: 1.86;
