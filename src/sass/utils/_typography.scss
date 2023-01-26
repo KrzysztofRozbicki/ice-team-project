@@ -158,3 +158,9 @@
     line-height: 1.86;
   }
 }
+
+//Klasy dla przycisków
+
+.button-500 {
+  @include text(var(--fs-500), var(--text-pink), 700, 1.31);
+}
