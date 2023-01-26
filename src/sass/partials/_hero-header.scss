@@ -74,7 +74,6 @@
   }
 
   &__button {
-    //   @include font-mixin($color-crimson, 700, 1rem, 1.31, 0em);
     display: none;
   }
 }
@@ -114,6 +113,10 @@
     max-width: $tablet-size;
     min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 34px 34px;
+
+    &__articles {
+      padding-top: 15px;
+    }
 
     &__circle-bg {
       width: 324px;
@@ -163,20 +166,26 @@
     gap: 30px;
 
     &__button {
-      display: initial;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
+      // display: initial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
       width: 158px;
       height: 44px;
       border-radius: 22px;
       border: none;
       box-shadow: inset var(--text-pink-light) 0 0 4px 2px;
-      transition: box-shadow 250ms ease-in-out;
+      transition: 250ms ease-in-out;
       // flex-shrink: 1;
+
+      svg {
+        margin-bottom: -2px;
+      }
 
       &:hover,
       &:focus {
+        color: var(--text-pink);
         cursor: pointer;
         outline: none;
         box-shadow: inset var(--text-pink-light) 0 0 0 0, var(--text-pink-light) 0 5px 15px 5px;
@@ -233,7 +242,10 @@
     }
 
     &__link {
-      // @include font-mixin($color-white, 700, 1rem, 1.31, 0em);
+      transition: color 250ms ease-in-out;
+      &:hover {
+        color: var(--text-pink);
+      }
     }
   }
   .menu-toggle {
