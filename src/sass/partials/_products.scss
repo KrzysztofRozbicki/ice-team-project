@@ -1,1 +1,43 @@
 @use '../utils' as *;
+
+.title-container {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.94rem;
+  &__label {
+    display: block;
+    margin-bottom: 0.94rem;
+  }
+}
+.products-wrapper {
+  padding-top: 7.56rem;
+  padding-bottom: 6.13rem;
+}
+.products-list {
+  display: flex;
+  gap: 8.13rem;
+  flex-wrap: wrap;
+  &__item {
+    width: 100%;
+    min-height: 30.31rem;
+    border-radius: var(--box-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.88rem;
+    text-align: center;
+    padding: 10.06rem 2.44rem 2.56rem 2.56rem;
+    &--bg1 {
+      background-color: var(--bg-pink);
+    }
+    &--bg2 {
+      background-color: var(--bg-beige);
+    }
+    &--bg3 {
+      background-color: var(--bg-green);
+    }
+  }
+  &__header {
+    text-transform: uppercase;
+  }
+}
