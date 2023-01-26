@@ -55,7 +55,8 @@
 //Klasy dla tekstów.
 
 .text-200 {
-  @include text(var(--fs-200), var(--text-white), 400, 1.5);
+  @include text(var(--fs-200), var(--text-white), 400, 1.25);
+  font-family: var(--ff-primary);
 }
 
 .text-300 {
