@@ -18,3 +18,8 @@ body {
   padding-inline: var(--pd-container);
   max-width: var(--device-screen);
 }
+
+.header-container {
+  background-color: var(--bg-pink);
+  margin: auto;
+}
