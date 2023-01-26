@@ -3,7 +3,7 @@
 .title-container {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1.94rem;
+  margin-bottom: 9rem;
   &__label {
     display: block;
     margin-bottom: 0.94rem;
@@ -53,6 +53,45 @@
       top: 1.875rem;
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+  &__header-1-photo {
+    &::before {
+      content: '';
+      background-image: url('../images/products/ice-cream-mobile.png');
+      width: 15.56rem;
+      height: 15.75rem;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -17.19rem;
+    }
+  }
+  &__header-2-photo {
+    &::before {
+      content: '';
+      background-image: url('../images/products/coffee-mobile.png');
+      width: 15.56rem;
+      height: 15.75rem;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -17.19rem;
+    }
+  }
+  &__header-3-photo {
+    &::before {
+      content: '';
+      background-image: url('../images/products/shake-mobile.png');
+      width: 15.56rem;
+      height: 15.75rem;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -17.19rem;
     }
   }
 }
