@@ -2,12 +2,31 @@
 
 .header {
   margin: auto;
-  max-width: 768px;
+  // max-width: 768px;
+  // max-width: $mobile-size;
   position: relative;
   padding: 6px 20px 160px;
   background-color: var(--bg-pink);
   min-height: 502px; /* ----------------- ONLY FOR TESTING!! */
   overflow: hidden;
+
+  &__articles {
+    // padding-top: 9px;
+    padding-top: 137px;
+    position: inherit;
+    display: flex;
+    width: 220px;
+    z-index: 10;
+  }
+
+  &__article-numbers {
+    display: none;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+  }
 
   &__circle-bg {
     width: 346px;
@@ -33,7 +52,8 @@
   }
 
   &__hero-girl {
-    display: hidden;
+    // display: hidden;
+    position: absolute;
     opacity: 0;
   }
 
@@ -90,7 +110,8 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 768px;
+    // max-width: 768px;
+    max-width: $tablet-size;
     min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 34px 34px;
 
@@ -113,7 +134,6 @@
 
     &__hero-girl {
       display: initial;
-      position: absolute;
       bottom: 0;
       left: 566px;
       width: 168px;
@@ -167,7 +187,8 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    max-width: 1280px;
+    // max-width: 1280px;
+    max-width: $desktop-size;
     min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 115px 56px 46px;
 

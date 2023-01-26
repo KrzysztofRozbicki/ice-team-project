@@ -26,6 +26,7 @@
   @include text(var(--fs-700), var(--text-white), 400, 1.145);
   font-family: var(--ff-header);
   letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .header-750 {
@@ -98,6 +99,12 @@
     line-height: 1.52;
     letter-spacing: 0.04em;
   }
+}
+
+.text-750 {
+  @include text(var(--fs-750), var(--text-pink), 400, 1.14);
+  font-family: var(--ff-header);
+  letter-spacing: 0.04em;
 }
 
 .text-copyright {
