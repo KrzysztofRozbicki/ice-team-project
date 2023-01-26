@@ -1,10 +1,9 @@
 @use '../utils' as *;
 
 .gallery {
-  max-width: $desktop-size;
   margin-inline: auto;
-  padding: 4rem;
-  text-align: center;
-  background:linear-gradient(to bottom, var(--bg-pink-light) 50%, var(--bg-white) 50%);
+  background: linear-gradient(to bottom, var(--bg-pink-light) 50%, var(--bg-white) 50%);
+  &__picture {
+    margin-inline: auto;
+  }
 }
-

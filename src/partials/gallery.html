@@ -1,3 +1,47 @@
-<section>
-  <h3 class="text-325 gallery">Tutaj będzie galeria - @Krzysztof R.</h3>
+<section class="gallery">
+  <div class="container">
+    <picture>
+      <source srcset="./images/gallery/webp/gallery-desktop.webp" media="(min-width: 1280px)" />
+
+      <source
+        srcset="./images/gallery/webp/gallery-desktop@2x.webp"
+        media="(min-width: 1280px and min-device-pixel-ratio: 2)"
+      />
+      <source
+        srcset="./images/gallery/webp/gallery-desktop@3x.webp"
+        media="(min-width: 1280px and min-device-pixel-ratio: 3)"
+      />
+
+      <source srcset="./images/gallery/webp/gallery-tablet.webp" media="(min-width: 768px)" />
+      <source
+        srcset="./images/gallery/webp/gallery-tablet@2x.webp"
+        media="(min-width: 768px and min-device-pixel-ratio: 2)"
+      />
+
+      <source
+        srcset="./images/gallery/webp/gallery-tablet@3x.webp"
+        media="(min-width: 768px and min-device-pixel-ratio: 3)"
+      />
+
+      <source
+        srcset="./images/gallery/webp/gallery-mobile@3x.webp"
+        media="(min-device-pixel-ratio: 3),  (min-resolution: 288dpi),
+  (min-resolution: 3dppx)"
+      />
+      <source
+        srcset="./images/gallery/webp/gallery-mobile@2x.webp"
+        media="(min-device-pixel-ratio: 2),  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) "
+      />
+      <img
+        class="gallery__picture"
+        src="./images/gallery/webp/gallery-mobile.webp"
+        alt="A lot of ice cream"
+      />
+    </picture>
+
+    <div class="gallery-grid">
+      
+    </div>
+  </div>
 </section>
