@@ -12,6 +12,10 @@
 .products-wrapper {
   padding-top: 7.56rem;
   padding-bottom: 6.13rem;
+  &__items {
+    max-width: 17.5rem;
+    margin: auto;
+  }
 }
 .products-list {
   display: flex;
