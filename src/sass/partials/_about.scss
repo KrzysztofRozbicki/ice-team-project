@@ -1,13 +1,15 @@
 @use '../utils' as *;
 .about {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-pink-light);
+    padding-top: 125px;
+    
 
     &__title {
-        margin-top: 125px;
         text-align: center;
     }
   
@@ -33,6 +35,7 @@
     justify-content: center;
     align-items: center;
     }
+
     &__cow {
         text-decoration: none;
 
@@ -40,7 +43,10 @@
 
     &__description {
         max-width: 320px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
+
     &__description-text1 {
         margin-top: 46px;
         color: var(--text-black);
@@ -48,6 +54,7 @@
         font-size: var(--fs-325);
         line-height: 1.25rem;
     }
+
     &__description-text2 {
         margin-top: 40px;
         color: var(--text-gray);
@@ -55,13 +62,20 @@
         font-size: var(--fs-300);
         line-height: 1.25rem;
     }
+
+    &__description-text3 {
+        color: var(--text-gray);
+        font-family: var(--ff-primary); 
+        font-size: var(--fs-300);
+        line-height: 1.25rem;
+        padding-top: 14px;
+    }
+
     &__splash {
         text-decoration: none;
     }
 }
 
-// @media screen and (min-width: $tablet-size) {
-// }
+// @media screen and (min-width: $tablet-size)
 
-// @media screen and (min-width: $desktop-size) {
-// }
+// @media screen and (min-width: $desktop-size)
