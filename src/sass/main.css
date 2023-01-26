@@ -151,7 +151,8 @@
   font-size: var(--fs-200);
   color: var(--text-white);
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.25;
+  font-family: var(--ff-primary);
 }
 
 .text-300 {
@@ -384,9 +385,11 @@
 @media (min-width: 80em) {
   .button-primary--header {
     width: 138px;
+    height: 40px;
   }
   .button-secondary--header {
     width: 104px;
+    height: 40px;
   }
 }
 .about {
@@ -530,8 +533,10 @@
   padding-top: 137px;
   position: inherit;
   display: flex;
-  width: 220px;
   z-index: 10;
+}
+.header__article-main {
+  flex-basis: 220px;
 }
 .header__article-numbers {
   display: none;
@@ -539,6 +544,9 @@
 .header__buttons {
   display: flex;
   gap: 8px;
+}
+.header__description {
+  display: none;
 }
 .header__circle-bg {
   width: 346px;
@@ -600,9 +608,53 @@
     max-width: 48em;
     min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 34px 34px;
+    overflow: initial;
   }
   .header__articles {
     padding-top: 15px;
+    justify-content: space-between;
+  }
+  .header__article-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+  }
+  .header__article-number {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    position: relative;
+  }
+  .header__article-circle {
+    position: absolute;
+    right: -10;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--bg-white);
+    z-index: -1;
+  }
+  .header__description {
+    position: absolute;
+    left: 154px;
+    bottom: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .header__description-text {
+    width: 114px;
+  }
+  .header__description-icon {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--bg-white);
   }
   .header__circle-bg {
     width: 324px;
@@ -671,6 +723,35 @@
     max-width: 80em;
     min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 115px 56px 46px;
+  }
+  .header__articles {
+    padding-top: 69px;
+  }
+  .header__buttons {
+    gap: 15px;
+  }
+  .header__article-numbers {
+    height: 168px;
+  }
+  .header__article-circle {
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    right: -20;
+  }
+  .header__description {
+    left: 295px;
+    bottom: 56px;
+    gap: 20px;
+  }
+  .header__description-text {
+    width: 200px;
+  }
+  .header__description-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: var(--bg-white);
   }
   .header__circle-bg {
     width: 538px;
