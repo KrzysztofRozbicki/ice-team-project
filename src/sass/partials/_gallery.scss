@@ -1,9 +1,95 @@
 @use '../utils' as *;
 
+@mixin position($c-start, $c-end, $r-start, $r-end) {
+  grid-column-start: $c-start;
+  grid-column-end: $c-end;
+  grid-row-start: $r-start;
+  grid-row-end: $r-end;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+}
 .gallery {
   margin-inline: auto;
+  width: 100%;
   background: linear-gradient(to bottom, var(--bg-pink-light) 50%, var(--bg-white) 50%);
   &__picture {
     margin-inline: auto;
   }
+  &__grid {
+    --c: 7; //number of columns
+    --r: 6; //number of rows
+    --g: 4px; //gap
+    --s: 1.5; //scale
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--c), 100px);
+    grid-template-rows: repeat(var(--r), 50px);
+    grid-gap: var(--g);
+
+    &__item {
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      transition: 0.3s ease-in-out;
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        box-shadow: var(--box-shadow);
+        //transform: scale(2);
+      }
+      &:nth-child(1) {
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+      &:nth-child(2) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      &:nth-child(3) {
+        @include position(3, 5, 1, 5);
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          box-shadow: var(--box-shadow);
+          transform: scale(1.1);
+        }
+      }
+      &:nth-child(4) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      &:nth-child(5) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      &:nth-child(6) {
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+      &:nth-child(7) {
+        grid-row-start: 4;
+        grid-row-end: 6;
+      }
+      &:nth-child(8) {
+        @include position(3, 3, 5, 7);
+      }
+      &:nth-child(9) {
+        grid-row-start: 4;
+        grid-row-end: 6;
+      }
+      &:nth-child(10) {
+        grid-row-start: 4;
+        grid-row-end: 6;
+      }
+
+      &:nth-child(1):hover,
+      &:nth-child(1):focus
+    }
+  }
 }
+
+
