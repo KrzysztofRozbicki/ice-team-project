@@ -15,8 +15,12 @@
     padding-top: 137px;
     position: inherit;
     display: flex;
-    width: 220px;
+    // width: 220px;
     z-index: 10;
+  }
+
+  &__article-main {
+    flex-basis: 220px;
   }
 
   &__article-numbers {
@@ -26,6 +30,10 @@
   &__buttons {
     display: flex;
     gap: 8px;
+  }
+
+  &__description {
+    display: none;
   }
 
   &__circle-bg {
@@ -113,9 +121,62 @@
     max-width: $tablet-size;
     min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 34px 34px;
+    overflow: initial;
 
     &__articles {
+      // width: auto;
       padding-top: 15px;
+      justify-content: space-between;
+    }
+
+    &__article-numbers {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100px;
+      // background-color: red;
+    }
+
+    &__article-number {
+      display: flex;
+      text-align: right;
+      // margin-left: auto;
+      flex-direction: column;
+      position: relative;
+    }
+
+    &__article-circle {
+      position: absolute;
+      right: -10;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--bg-white);
+      z-index: -1;
+    }
+
+    &__description {
+      position: absolute;
+      left: 154px;
+      bottom: 34px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    &__description-text {
+      width: 114px;
+    }
+
+    &__description-icon {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: var(--bg-white);
     }
 
     &__circle-bg {
@@ -200,6 +261,44 @@
     max-width: $desktop-size;
     min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 115px 56px 46px;
+
+    &__articles {
+      // width: auto;
+      padding-top: 69px;
+    }
+
+    &__buttons {
+      gap: 15px;
+    }
+
+    &__article-numbers {
+      height: 168px;
+    }
+
+    &__article-circle {
+      width: 30px;
+      height: 30px;
+      top: -2px;
+      right: -20;
+    }
+
+    &__description {
+      left: 295px;
+      bottom: 56px;
+      gap: 20px;
+    }
+
+    &__description-text {
+      width: 200px;
+      // background-color: red;
+    }
+
+    &__description-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: var(--bg-white);
+    }
 
     &__circle-bg {
       width: 538px;
