@@ -80,6 +80,7 @@
   display: block;
   position: absolute;
   top: -7.06rem;
+  background-repeat: no-repeat;
 }
 .products-list__item--bg2::before {
   content: '';
@@ -89,15 +90,18 @@
   display: block;
   position: absolute;
   top: -7.06rem;
+  background-repeat: no-repeat;
 }
 .products-list__item--bg3::before {
   content: '';
   background-image: url('../images/products/shake-mobile.png');
+  background-size: 15.56rem 15.75rem;
   width: 15.56rem;
   height: 15.75rem;
   display: block;
   position: absolute;
   top: -7.06rem;
+  background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-list__item--bg1::before {
@@ -134,5 +138,55 @@
       flex-basis: calc((100% - 40px) / 3);
       padding: 9.5rem 0.69rem 2.5rem;
     }
+  }
+  .products-list__item--bg1::before {
+    background-image: url('../images/products/ice-cream-tablet.png');
+    background-size: 13.75rem 14.125rem;
+    width: 13.75rem;
+    height: 14.125rem;
+  }
+  .products-list__item--bg2::before {
+    background-image: url('../images/products/coffee-tablet.png');
+    background-size: 13.75rem 14.56rem;
+    width: 13.75rem;
+    height: 14.56rem;
+  }
+  .products-list__item--bg3::before {
+    background-image: url('../images/products/shake-tablet.png');
+    background-size: 13.75rem 14rem;
+    width: 13.75rem;
+    height: 14rem;
+  }
+}
+@media screen and (min-width: $tablet-size) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $tablet-size) and (min-resolution: 192dpi),
+  screen and (min-width: $tablet-size) and (min-resolution: 2dppx) {
+  .products-list__item--bg1::before {
+    background-image: url('../images/products/webp/ice-cream-tablet@2x.webp');
+    background-size: 13.75rem 14.125rem;
+  }
+  .products-list__item--bg2::before {
+    background-image: url('../images/products/webp/coffee-tablet@2x.webp');
+    background-size: 13.75rem 14.56rem;
+  }
+  .products-list__item--bg3::before {
+    background-image: url('../images/products/webp/shake-tablet@2x.webp');
+    background-size: 13.75rem 14rem;
+  }
+}
+@media screen and (min-width: $tablet-size) and (min-device-pixel-ratio: 3),
+  screen and (min-width: $tablet-size) and (min-resolution: 288dpi),
+  screen and (min-width: $tablet-size) and (min-resolution: 3dppx) {
+  .products-list__item--bg1::before {
+    background-image: url('../images/products/webp/ice-cream-tablet@3x.webp');
+    background-size: 13.75rem 14.125rem;
+  }
+  .products-list__item--bg2::before {
+    background-image: url('../images/products/webp/coffee-tablet@3x.webp');
+    background-size: 13.75rem 14.56rem;
+  }
+  .products-list__item--bg3::before {
+    background-image: url('../images/products/webp/shake-tablet@3x.webp');
+    background-size: 13.75rem 14rem;
   }
 }
