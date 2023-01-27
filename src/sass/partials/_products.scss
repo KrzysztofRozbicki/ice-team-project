@@ -242,3 +242,35 @@
     top: -13.125rem;
   }
 }
+@media screen and (min-width: $desktop-size) and (min-device-pixel-ratio: 2),
+  screen and (min-width: $desktop-size) and (min-resolution: 192dpi),
+  screen and (min-width: $desktop-size) and (min-resolution: 2dppx) {
+  .products-list__item--bg1::before {
+    background-image: url('../images/products/webp/ice-cream-dekstop@2x.webp');
+    background-size: 20.94rem 20.94rem;
+  }
+  .products-list__item--bg2::before {
+    background-image: url('../images/products/webp/coffee-desktop@2x.webp');
+    background-size: 21.06rem 20.94rem;
+  }
+  .products-list__item--bg3::before {
+    background-image: url('../images/products/webp/shake-desktop@2x.webp');
+    background-size: 20.94rem 20.94rem;
+  }
+}
+@media screen and (min-width: $desktop-size) and (min-device-pixel-ratio: 3),
+  screen and (min-width: $desktop-size) and (min-resolution: 288dpi),
+  screen and (min-width: $desktop-size) and (min-resolution: 3dppx) {
+  .products-list__item--bg1::before {
+    background-image: url('../images/products/webp/ice-cream-dekstop@3x.webp');
+    background-size: 20.94rem 20.94rem;
+  }
+  .products-list__item--bg2::before {
+    background-image: url('../images/products/webp/coffee-desktop@3x.webp');
+    background-size: 21.06rem 20.94rem;
+  }
+  .products-list__item--bg3::before {
+    background-image: url('../images/products/webp/shake-desktop@3x.webp');
+    background-size: 20.94rem 20.94rem;
+  }
+}
