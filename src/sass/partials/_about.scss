@@ -10,6 +10,7 @@
     background-image: url('../images/about/webp/about-bg-mobile.webp');
     background-repeat: no-repeat;
     background-position: 50% 93%;
+    background-size: 100vw;
 
     &__title {
         text-align: center;
@@ -67,19 +68,13 @@
 
 }
 
-@media only screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
-    .about {
-        background-image: none;
-        }
-}
-
 
 @media screen and (min-width: $tablet-size) {
     .about {
         background-image: none;
 
         &__description {
-            max-width: 100%;
+            max-width: 100;
         }
     }
 }
