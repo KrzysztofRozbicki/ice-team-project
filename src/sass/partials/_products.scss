@@ -9,12 +9,25 @@
     margin-bottom: 0.94rem;
   }
 }
+@media (min-width: $tablet-size) {
+  .title-container {
+    margin-bottom: 9.38rem;
+  }
+}
 .products-wrapper {
   padding-top: 7.56rem;
   padding-bottom: 6.13rem;
   &__items {
     max-width: 17.5rem;
     margin: auto;
+  }
+}
+@media (min-width: $tablet-size) {
+  .products-wrapper {
+    padding-bottom: 7rem;
+    &__items {
+      max-width: none;
+    }
   }
 }
 .products-list {
@@ -136,6 +149,15 @@
         background-image: url('../images/products/webp/shake-mobile@3x.webp');
         background-size: 15.56rem 15.75rem;
       }
+    }
+  }
+}
+@media (min-width: $tablet-size) {
+  .products-list {
+    gap: 1.25rem;
+    &__item {
+      flex-basis: calc((100% - 40px) / 3);
+      padding: 9.5rem 0.69rem 2.5rem;
     }
   }
 }
