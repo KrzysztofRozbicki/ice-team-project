@@ -1,7 +1,11 @@
 @use '../utils' as *;
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop-size) {
   .menu-toggle {
+    display: none;
+  }
+
+  .menu-container {
     display: none;
   }
 }
@@ -16,6 +20,7 @@
   z-index: 999;
   transform: translateX(1280px);
   transition: transform 250ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .menu-container.is-open {
