@@ -274,3 +274,13 @@
     background-size: 20.94rem 20.94rem;
   }
 }
+.button-arrow--products {
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+  &:hover,
+  &:focus {
+    transform: rotate(-90deg);
+  }
+}
