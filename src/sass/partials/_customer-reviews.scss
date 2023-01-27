@@ -25,9 +25,7 @@ $start-gap: 29px;
   &__photo {
     max-width: 85px;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 29px;
+    margin: 80px auto 29px;
   }
 
   &__text {
@@ -81,6 +79,64 @@ $start-gap: 29px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: $tablet-size) {
+  .reviews {
+    &__article {
+      background-color: var(--text-white);
+      padding-bottom: 0;
+      &--wrapper {
+        max-width: 490px;
+        background-image: repeating-linear-gradient(
+          var(--text-white) $start-gap,
+          var(--stroke) 0px,
+          var(--text-white) calc($start-gap + 1px),
+          var(--text-white) calc($start-gap + $start-gap + 1px)
+        );
+      }
+    }
+    &__photo {
+      margin: 120px auto 19px;
+    }
+
+    &__text {
+      max-width: 460px;
+    }
+    &__icon {
+      left: -20px;
+      top: -20px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-size) {
+  .reviews {
+    &__article {
+      background-color: var(--bg-gray);
+      padding-bottom: 30px;
+      &--wrapper {
+        max-width: 800px;
+        padding-bottom: 2px;
+        background-image: repeating-linear-gradient(
+          var(--bg-gray) $start-gap,
+          var(--stroke) 0px,
+          var(--bg-gray) calc($start-gap + 1px),
+          var(--bg-gray) calc($start-gap + $start-gap + 1px)
+        );
+      }
+    }
+    &__text {
+      max-width: 750px;
+    }
+    &__list--dot {
+      margin-top: 15px;
+    }
+    &__icon {
+      left: 0px;
+      top: -20px;
+    }
   }
 }
 
