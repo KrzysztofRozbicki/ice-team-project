@@ -9,6 +9,11 @@
     margin-bottom: 0.94rem;
   }
 }
+@media (min-width: $tablet-size) {
+  .title-container {
+    margin-bottom: 9.38rem;
+  }
+}
 .products-wrapper {
   padding-top: 7.56rem;
   padding-bottom: 6.13rem;
@@ -150,9 +155,9 @@
 @media (min-width: $tablet-size) {
   .products-list {
     gap: 1.25rem;
-    flex-wrap: nowrap;
     &__item {
       flex-basis: calc((100% - 40px) / 3);
+      padding: 9.5rem 0.69rem 2.5rem;
     }
   }
 }
