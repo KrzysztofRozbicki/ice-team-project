@@ -7,6 +7,7 @@
     align-items: center;
     background-color: var(--bg-pink-light);
     padding-top: 125px;
+    position: relative;
     
 
     &__title {
@@ -70,12 +71,30 @@
         line-height: 1.25rem;
         padding-top: 14px;
     }
+    &__button {
+        margin: 17px;
+    }
 
     &__splash {
         text-decoration: none;
+        position: absolute;
+        bottom: 75px;
+    }
+
+}
+
+@media only screen and (min-width: $tablet-size) and (max-width: $desktop-size) {
+    .about {
+        &__splash {
+            display: none;
+        }
     }
 }
 
-// @media screen and (min-width: $tablet-size)
-
-// @media screen and (min-width: $desktop-size)
+@media screen and (min-width: $tablet-size) {
+    .about {
+        &__description {
+            max-width: 100%;
+        }
+    }
+}
