@@ -7,25 +7,22 @@
     align-items: center;
     background-color: var(--bg-pink-light);
     padding-top: 125px;
-    
+    background-image: url('../images/about/webp/about-bg-mobile.webp');
+    background-repeat: no-repeat;
+    background-position: 50% 93%;
+    background-size: 100vw;
 
     &__title {
         text-align: center;
     }
   
     &__titleFirst {
-        color: var(--text-pink-light);
-        font-family: var(--ff-header);
-        font-size: var(--fs-550);
         text-transform: uppercase;
         
     }
 
     &__titleSecond {
         margin-top: 15px;
-        color: var(--text-pink);
-        font-family: var(--ff-header);
-        font-size: var(--fs-800);
         text-transform: uppercase;
     }
 
@@ -49,33 +46,35 @@
 
     &__description-text1 {
         margin-top: 46px;
-        color: var(--text-black);
-        font-family: var(--ff-primary); 
-        font-size: var(--fs-325);
-        line-height: 1.25rem;
+
     }
 
     &__description-text2 {
         margin-top: 40px;
-        color: var(--text-gray);
-        font-family: var(--ff-primary); 
-        font-size: var(--fs-300);
-        line-height: 1.25rem;
     }
 
     &__description-text3 {
-        color: var(--text-gray);
-        font-family: var(--ff-primary); 
-        font-size: var(--fs-300);
-        line-height: 1.25rem;
+
         padding-top: 14px;
+    }
+    &__button {
+        margin: 17px;
     }
 
     &__splash {
         text-decoration: none;
+
     }
+
 }
 
-// @media screen and (min-width: $tablet-size)
 
-// @media screen and (min-width: $desktop-size)
+@media screen and (min-width: $tablet-size) {
+    .about {
+        background-image: none;
+
+        &__description {
+            max-width: 100;
+        }
+    }
+}
