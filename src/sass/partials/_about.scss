@@ -72,9 +72,5 @@
 @media screen and (min-width: $tablet-size) {
     .about {
         background-image: none;
-
-        &__description {
-            max-width: 100;
-        }
     }
 }
