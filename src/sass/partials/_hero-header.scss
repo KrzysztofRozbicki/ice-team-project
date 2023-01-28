@@ -1,4 +1,5 @@
 @use '../utils' as *;
+@use '../utils/animations' as *;
 
 .header {
   margin: auto;
@@ -265,7 +266,7 @@
       height: 44px;
       border-radius: 22px;
       border: none;
-      box-shadow: inset var(--text-pink-light) 0 0 3px 2px;
+      box-shadow: inset var(--text-pink-light) 1px 1px 3px 2px;
       transition: 250ms ease-in-out;
       // flex-shrink: 1;
 
@@ -279,6 +280,11 @@
         cursor: pointer;
         outline: none;
         box-shadow: inset var(--text-pink-light) 0 0 0 0, var(--text-pink-light) 0 5px 15px 5px;
+
+        svg {
+          // animation: animation-translateX 2000ms infinite;
+          @include animation-translateX(translateX-150, 1800ms, infinite);
+        }
       }
     }
   }
@@ -322,7 +328,7 @@
 
     &__description-text {
       width: 200px;
-      height: 78px;
+      min-height: 78px;
       // background-color: red;
     }
 
