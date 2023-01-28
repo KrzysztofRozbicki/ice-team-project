@@ -34,10 +34,10 @@
 
       <ul class="nav__links">
         <li><a class="nav__link text-400" href="#">Home</a></li>
-        <li><a class="nav__link text-400" href="#products">About us</a></li>
+        <li><a class="nav__link text-400" href="#about-us">About us</a></li>
         <li><a class="nav__link text-400" href="#about-us">How it's made?</a></li>
-        <li><a class="nav__link text-400" href="#gallery">Our products</a></li>
-        <li><a class="nav__link text-400" href="#contacts">Contact</a></li>
+        <li><a class="nav__link text-400" href="#products">Our products</a></li>
+        <li><a class="nav__link text-400" href="#contact">Contact</a></li>
       </ul>
       <button class="nav__button" type="button">
         <p>Buy now</p>
@@ -51,7 +51,7 @@
     <div class="header__articles">
       <div class="header__article-main">
         <h1 class="header-700">
-          ice cream <br />made with <span class="header-900">passion</span>
+          ice cream <br />made with <br /><span class="header-900">passion</span>
         </h1>
       </div>
       <div class="header__article-numbers">
@@ -81,37 +81,69 @@
     </div>
     <div class="header__description">
       <p class="header__description-text text-200">
-        Lorem ipsum dolor ellendus cum fugiat maxime dicta, asperiores ipsum ratione. Tempore veniam
-        ratione delectus nemo quaerat?
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
       </p>
-      <div class="header__description-icon">
+      <button class="header__description-icon" type="button">
         <svg width="7" height="7" fill="currentColor">
           <use href="images/icons.svg#icon-arrow-right"></use>
         </svg>
-      </div>
+      </button>
     </div>
 
     <div class="header__circle-bg"></div>
-    <img
-      class="header__hero-ice-cream"
-      width="171"
-      height="410"
-      src="images/hero/hero-ice-cream-mobile.png"
-      alt="Logo image"
-      srcset="
-        images/hero/hero-ice-cream-tablet.png     143w,
-        images/hero/hero-ice-cream-mobile.png     171w,
-        images/hero/hero-ice-cream-desktop.png    236w,
-        images/hero/hero-ice-cream-tablet@2x.png  286w,
-        images/hero/hero-ice-cream-mobile@2x.png  342w,
-        images/hero/hero-ice-cream-tablet@3x.png  429w,
-        images/hero/hero-ice-cream-desktop@2x.png 472w,
-        images/hero/hero-ice-cream-mobile@3x.png  513w,
-        images/hero/hero-ice-cream-desktop@3x.png 708w
-      "
-      sizes="(min-width:1280px) 236px, (min-width:768px) 143px, 171px"
-    />
-    <img
+
+    <picture class="header__hero-ice-cream">
+      <source
+        media="(min-width: 1280px)"
+        width="236"
+        height="557"
+        srcset="
+          ./images/hero/webp/hero-ice-cream-desktop.webp    1x,
+          ./images/hero/webp/hero-ice-cream-desktop@2x.webp 2x,
+          ./images/hero/webp/hero-ice-cream-desktop@3x.webp 3x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        width="143"
+        height="336"
+        srcset="
+          ./images/hero/webp/hero-ice-cream-tablet.webp    1x,
+          ./images/hero/webp/hero-ice-cream-tablet@2x.webp 2x,
+          ./images/hero/webp/hero-ice-cream-tablet@3x.webp 3x
+        "
+      />
+      <img
+        src="images/hero/webp/hero-ice-cream-mobile.webp"
+        alt="picture of a big icecream"
+        width="171"
+        height="410"
+        srcset="./images/hero/webp/hero-ice-cream-mobile@2x.webp x2, ./images/hero/webp/hero-ice-cream-mobile@3x.webp x3"
+      />
+    </picture>
+
+    <picture class="header__hero-girl">
+      <source
+        media="(min-width: 1280px)"
+        width="293"
+        height="232"
+        srcset="
+          ./images/hero/webp/hero-girl-desktop.webp    1x,
+          ./images/hero/webp/hero-girl-desktop@2x.webp 2x,
+          ./images/hero/webp/hero-girl-desktop@3x.webp 3x
+        "
+      />
+      <img
+        src="images/hero/webp/hero-girl-tablet.webp"
+        alt="girl lickin icecream"
+        width="168"
+        height="133"
+        srcset="./images/hero/webp/hero-girl-tablet@2x.webp x2, ./images/hero/webp/hero-girl-tablet@3x.webp x3"
+      />
+    </picture>
+
+    <!-- <img
       class="header__hero-girl"
       width="168"
       height="133"
@@ -126,8 +158,29 @@
         images/hero/hero-girl-desktop@3x.png 879w
       "
       sizes="(min-width:1280px) 188px, 124px"
-    />
-    <img
+    /> -->
+
+    <picture class="header__hero-milk">
+      <source
+        media="(min-width: 1280px)"
+        width="188"
+        height="191"
+        srcset="
+          ./images/hero/webp/hero-milk-desktop.webp    1x,
+          ./images/hero/webp/hero-milk-desktop@2x.webp 2x,
+          ./images/hero/webp/hero-milk-desktop@3x.webp 3x
+        "
+      />
+      <img
+        src="images/hero/webp/hero-milk-tablet.webp"
+        alt="picture of a big icecream"
+        width="124"
+        height="126"
+        srcset="./images/hero/webp/hero-milk-tablet@2x.webp x2, ./images/hero/webp/hero-milk-tablet@3x.webp x3"
+      />
+    </picture>
+
+    <!-- <img
       class="header__hero-milk"
       width="124"
       height="126"
@@ -142,7 +195,7 @@
         images/hero/hero-milk-desktop@3x.png 564w
       "
       sizes="(min-width:1280px) 293px, 168px"
-    />
+    /> -->
 
     <!-- -----------------Responsive nav START----------- -->
 

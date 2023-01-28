@@ -1,0 +1,20 @@
+@mixin animation-translateX($typeOfAnimation, $duration, $how-many) {
+  animation: $typeOfAnimation $duration $how-many;
+}
+
+// ==================== TYPES OF ANIMATIONS =============== //
+
+@keyframes translateX-150 {
+  0% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(150%);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
