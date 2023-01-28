@@ -7,7 +7,7 @@
   position: relative;
   padding: 6px 20px 160px 20px;
   background-color: var(--bg-pink);
-  min-height: 502px; /* ----------------- ONLY FOR TESTING!! */
+  // min-height: 502px; /* ----------------- ONLY FOR TESTING!! */
   overflow: hidden;
 
   &__articles {
@@ -17,7 +17,6 @@
     display: flex;
     // width: 220px;
     z-index: 10;
-    padding-bottom: 19px;
   }
 
   &__article-main {
@@ -29,6 +28,7 @@
   }
 
   &__buttons {
+    padding-top: 19px;
     position: relative;
     display: flex;
     z-index: 10;
@@ -122,15 +122,15 @@
   .header {
     // max-width: 768px;
     max-width: $tablet-size;
-    min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
-    padding: 37px 34px 0px 34px;
+    // min-height: 399px; /* ----------------- ONLY FOR TESTING!! */
+    padding: 37px 34px 34px 34px;
     overflow: initial;
 
     &__articles {
       // width: auto;
       padding-top: 15px;
       justify-content: space-between;
-      padding-bottom: 8px;
+      // background-color: red;
     }
 
     &__article-numbers {
@@ -159,6 +159,11 @@
       z-index: -1;
     }
 
+    &__buttons {
+      padding-top: 8px;
+      gap: 8px;
+    }
+
     &__description {
       position: relative;
       // left: 154px;
@@ -184,16 +189,20 @@
       height: 18px;
       border-radius: 50%;
       background-color: var(--bg-white);
-      transition: transform 250ms ease-in-out;
+      transition: box-shadow 250ms ease-in-out;
 
       svg {
         transition: 250ms ease-in-out;
       }
 
       &:hover,
-      &:active {
-        transform: rotate(90deg);
+      &:focus {
         box-shadow: var(--text-pink-light) 0 0 10px 6px;
+
+        svg {
+          transform: rotate(90deg);
+          // box-shadow: var(--text-pink-light) 0 0 10px 6px;
+        }
       }
     }
 
@@ -279,17 +288,17 @@
   .header {
     // max-width: 1280px;
     max-width: $desktop-size;
-    min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
+    // min-height: 665px; /* ----------------- ONLY FOR TESTING!! */
     padding: 37px 115px 56px 46px;
 
     &__articles {
       // width: auto;
       padding-top: 69px;
-      padding-bottom: 9px;
     }
 
     &__buttons {
       gap: 15px;
+      padding-top: 9px;
     }
 
     &__article-numbers {
@@ -313,6 +322,7 @@
 
     &__description-text {
       width: 200px;
+      height: 78px;
       // background-color: red;
     }
 
