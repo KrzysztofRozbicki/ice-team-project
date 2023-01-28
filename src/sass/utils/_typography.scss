@@ -66,6 +66,9 @@
 
 .text-325 {
   @include text(var(--fs-325), var(--text-black), 500, 1.62);
+  &--advantages {
+    font-weight: 700;
+  }
   &--quote {
     line-height: 2.55;
   }
