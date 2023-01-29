@@ -283,7 +283,7 @@
 
         svg {
           // animation: animation-translateX 2000ms infinite;
-          @include animation-translateX(translateX-150, 1800ms, infinite);
+          @include animation-mixin(translateX-150, 1800ms, infinite);
         }
       }
     }

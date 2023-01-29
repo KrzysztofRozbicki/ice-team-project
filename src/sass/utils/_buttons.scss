@@ -30,6 +30,12 @@
   &--header {
     width: 83px;
     height: 24px;
+    transition: box-shadow 250ms ease-in-out, background-color 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--text-pink-light) 0 5px 10px 5px;
+    }
   }
 
   &--about {
@@ -69,6 +75,12 @@
   &--header {
     width: 62px;
     height: 24px;
+    transition: box-shadow 250ms ease-in-out, background-color 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--text-pink-light) 0 5px 10px 5px;
+    }
   }
 
   &--contacts {

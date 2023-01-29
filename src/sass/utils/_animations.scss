@@ -1,4 +1,4 @@
-@mixin animation-translateX($typeOfAnimation, $duration, $how-many) {
+@mixin animation-mixin($typeOfAnimation, $duration, $how-many) {
   animation: $typeOfAnimation $duration $how-many;
 }
 
