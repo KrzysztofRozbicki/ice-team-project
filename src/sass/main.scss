@@ -17,6 +17,10 @@ body {
   font-family: var(--ff-primary);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   margin-inline: auto;
   padding-inline: var(--pd-container);
