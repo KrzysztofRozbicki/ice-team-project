@@ -1,0 +1,107 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-btn" data-modal-close>X</button>
+    <h2 class="modal__tittle .header-700">Enjoy your meal</h2>
+    <form class="modal-form .text-400">
+      <div class="modal-form__order">
+        <div class="modal-form__ice-cream">
+          <label for="ice cream">ICE CREAM</label>
+          <input
+            type="number"
+            name="ice cream"
+            min="0"
+            max="999"
+            step="1"
+            value="0"
+            id="ice cream"
+          />
+        </div>
+        <div class="modal-form__ice-coffee">
+          <label for="ice coffee">ICE COFFEE</label>
+          <input
+            type="number"
+            name="ice coffee"
+            min="0"
+            max="999"
+            step="1"
+            value="0"
+            id="ice coffee"
+          />
+        </div>
+        <div class="modal-form__milkshakes">
+          <label for="milkshakes">MILKSHAKES</label>
+          <input
+            type="number"
+            name="milkshakes"
+            min="0"
+            max="999"
+            step="1"
+            value="0"
+            id="milkshakes"
+          />
+        </div>
+      </div>
+      <div class="modal-form__box">
+        <label class="modal-form__label" for="name"> Name </label>
+        <svg class="modal-form__icon-user">
+          <use href="./images/icons.svg#icon-user"></use>
+        </svg>
+        <input placeholder="John Doe" class="modal-form__input" type="text" name="name" id="name" />
+      </div>
+      <div class="modal-form__box">
+        <label class="modal-form__label" for="phone-number"> Phone </label>
+        <svg class="modal-form__icon-phone">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+        <input
+          placeholder="+48 000 000 000"
+          class="modal-form__input"
+          type="tel"
+          name="phone-number"
+          id="phone-number"
+        />
+      </div>
+      <div class="modal-form__box">
+        <label class="modal-form__label" for="email"> Email </label>
+        <svg class="modal-form__icon-mail">
+          <use href="./images/icons.svg#icon-mail"></use>
+        </svg>
+        <input
+          placeholder="example@gmail.com"
+          class="modal-form__input"
+          type="email"
+          name="email"
+          id="email"
+        />
+      </div>
+      <label class="modal-form__label" for="comments"> Address </label>
+      <input
+        class="modal-form__textarea"
+        name="comments"
+        type="text"
+        placeholder="31-419 Kraków ul. Rozrywka 1"
+        id="comments"
+      />
+      <p class="modal-form__sub-tittle .header-700">Payment Options</p>
+      <div class="modal-form__choose-option">
+        <label>
+          <input type="radio" name="payment" value="red" checked />
+          Cash
+        </label>
+        <label>
+          <input type="radio" name="payment" value="white" />
+          Pay Cards
+        </label>
+        <label>
+          <input type="radio" name="payment" value="green" />
+          PayPal
+        </label>
+      </div>
+      <button type="button" class="button-secondary button-500 button-secondary--form">
+        ORDER NOW
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
