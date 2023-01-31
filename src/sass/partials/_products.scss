@@ -113,6 +113,8 @@
   }
 }
 .button-arrow--products {
+  position: absolute;
+  bottom: 2.5rem;
   transition-property: transform;
   transition-duration: 500ms;
   transition-timing-function: linear;
@@ -197,6 +199,9 @@
     &__item-overlay {
       font-size: 0.875rem;
     }
+    &__span {
+      display: none;
+    }
   }
   .products-list__item--bg1::before {
     background-image: url('../images/products/ice-cream-tablet.png');
@@ -270,6 +275,9 @@
     &__item-overlay {
       font-size: 1.15rem;
     }
+  }
+  .button-arrow--products {
+    bottom: 3.125rem;
   }
   .products-list__item--bg1::before {
     background-image: url('../images/products/ice-cream-dekstop.png');
