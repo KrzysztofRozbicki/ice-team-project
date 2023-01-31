@@ -31,8 +31,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
-  height: 600px;
+  width: min(600px, 90vw);
+  height: min(600px, 90vh);
   background-color: var(--bg-white);
   z-index: 9999;
   transform: translate(-50%, -50%) scale(1);
@@ -66,18 +66,6 @@
   cursor: pointer;
 }
 
-@media (min-width: $tablet-size) {
-  .modal {
-    width: 500px;
-  }
-}
-
-@media (min-width: $desktop-size) {
-  .modal {
-    width: 700px;
-  }
-}
-
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -90,12 +78,6 @@
     label {
       display: block;
       text-align: center;
-      font-family: 'Titan One';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 23px;
-      color: var(--text-white);
     }
 
     input {
@@ -138,6 +120,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    color: grey;
   }
 
   &__sub-tittle {
