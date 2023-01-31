@@ -158,6 +158,9 @@
 
   .text-325 {
     letter-spacing: 0.04em;
+    &--address {
+      letter-spacing: 0;
+    }
   }
 
   .text-325--quote {
