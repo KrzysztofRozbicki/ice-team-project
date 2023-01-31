@@ -40,18 +40,18 @@
     display: none;
   }
 
-  &__circle-bg {
-    width: 346px;
-    height: 344px;
-    position: absolute;
-    top: 83px;
-    // left: 36px;
-    left: calc(100vw - 284px);
-    border-radius: 50%;
-    background-color: var(--text-pink-light);
-    transition: left 1250ms ease-in-out;
-    z-index: 0;
-  }
+  // &__circle-bg {
+  //   width: 346px;
+  //   height: 344px;
+  //   position: absolute;
+  //   top: 83px;
+  //   // left: 36px;
+  //   left: calc(100vw - 284px);
+  //   border-radius: 50%;
+  //   background-color: var(--text-pink-light);
+  //   transition: left 1250ms ease-in-out;
+  //   z-index: 0;
+  // }
 
   &__hero-ice-cream {
     position: absolute;
@@ -71,6 +71,50 @@
 
   &__hero-milk {
     display: none;
+  }
+
+  &__circle-bg-animated {
+    position: absolute;
+    top: 83px;
+    left: calc(100vw - 284px);
+    border-radius: 50%;
+    background-color: var(--text-pink-light);
+    transition: left 1250ms ease-in-out;
+    z-index: 0;
+  }
+
+  &__circle {
+    width: 346px;
+    height: 344px;
+    background-color: var(--text-pink-light);
+    border-radius: 50%;
+    // filter: contrast(25);
+    filter: blur(1px);
+  }
+}
+
+@for $i from 1 to 10 {
+  .sprk-#{$i} {
+    height: (17 + $i) + px;
+    width: (17 + $i) + px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    border-radius: 50%;
+    transform: rotate((random(300)) + deg);
+  }
+
+  .sprk-#{$i}::after {
+    content: '';
+    width: (8 + $i) + px;
+    height: (7 + $i) + px;
+    display: block;
+    background-color: var(--text-pink-light);
+    position: absolute;
+    border-radius: 50%;
+    transform-origin: (80 - $i * 2) + px (80 - $i * 2) + px;
+    animation: rotate-circle calc(3.5 + $i / 5) + s ease-in-out calc($i / 3) + s infinite;
+    filter: blur(3px);
   }
 }
 
@@ -263,13 +307,13 @@
       }
     }
 
-    &__circle-bg {
-      width: 324px;
-      height: 332px;
-      top: 31px;
-      left: 307px;
-      transition: left 1250ms ease-in-out;
-    }
+    // &__circle-bg {
+    //   width: 324px;
+    //   height: 332px;
+    //   top: 31px;
+    //   left: 307px;
+    //   transition: left 1250ms ease-in-out;
+    // }
 
     &__hero-ice-cream {
       position: absolute;
@@ -299,6 +343,16 @@
       width: 124px;
       height: auto;
       display: block;
+    }
+
+    &__circle-bg-animated {
+      top: 31px;
+      left: 307px;
+    }
+
+    &__circle {
+      width: 324px;
+      height: 332px;
     }
   }
 
@@ -395,13 +449,13 @@
       background-color: var(--bg-white);
     }
 
-    &__circle-bg {
-      width: 538px;
-      height: 538px;
-      top: 52px;
-      left: 475px;
-      transition: left 1250ms ease-in-out;
-    }
+    // &__circle-bg {
+    //   width: 538px;
+    //   height: 538px;
+    //   top: 52px;
+    //   left: 475px;
+    //   transition: left 1250ms ease-in-out;
+    // }
 
     &__hero-ice-cream {
       left: 594px;
@@ -423,6 +477,40 @@
       width: 188px;
       height: auto;
       display: block;
+    }
+
+    &__circle-bg-animated {
+      top: 52px;
+      left: 475px;
+    }
+
+    &__circle {
+      width: 538px;
+      height: 538px;
+    }
+  }
+
+  @for $i from 1 to 10 {
+    .sprk-#{$i} {
+      height: (17 + $i) + px;
+      width: (17 + $i) + px;
+      position: absolute;
+      top: 45%;
+      left: 45%;
+      border-radius: 50%;
+      transform: rotate((random(300)) + deg);
+    }
+    .sprk-#{$i}::after {
+      content: '';
+      width: (12 + $i) + px;
+      height: (11 + $i) + px;
+      display: block;
+      background-color: var(--text-pink-light);
+      position: absolute;
+      border-radius: 50%;
+      transform-origin: (130 - $i * 2) + px (130 - $i * 2) + px;
+      animation: rotate-circle calc(3.5 + $i / 5) + s ease-in-out calc($i / 3) + s infinite;
+      filter: blur(3px);
     }
   }
 

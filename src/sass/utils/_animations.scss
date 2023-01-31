@@ -19,6 +19,15 @@
   }
 }
 
+@keyframes rotate-circle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .transition {
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
