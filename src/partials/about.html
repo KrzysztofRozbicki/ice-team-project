@@ -8,32 +8,29 @@
       <article class="about__cow">
         <picture>
           <source
-            srcset="./images/about/webp/about-cow-mobile@2x.webp"
-            media="(min-device-pixel-ratio: 2)"
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/about/webp/about-cow-desktop.webp    1x,
+              ./images/about/webp/about-cow-desktop@2x.webp 2x,
+              ./images/about/webp/about-cow-desktop@3x.webp 3x
+            "
           />
           <source
-            srcset="./images/about/webp/about-cow-mobile@3x.webp"
-            media="(min-device-pixel-ratio: 3)"
+            media="(min-width: 768px)"
+            srcset="
+              ./images/about/webp/about-cow-tablet.webp    1x,
+              ./images/about/webp/about-cow-tablet@2x.webp 2x,
+              ./images/about/webp/about-cow-tablet@3x.webp 3x
+            "
           />
-          <source srcset="./images/about/webp/about-cow-tablet.webp" media="(min-width: 768px)" />
-          <source
-            srcset="./images/about/webp/about-cow-tablet@2x.webp"
-            media="(min-width: 768px and min-device-pixel-ratio: 2)"
+          <img
+            srcset="
+              ./images/about/webp/about-cow-mobile.webp    1x,
+              ./images/about/webp/about-cow-mobile@2x.webp 2x,
+              ./images/about/webp/about-cow-mobile@3x.webp 3x
+            "
+            alt="milk_cow"
           />
-          <source
-            srcset="./images/about/webp/about-cow-tablet@3x.webp"
-            media="(min-width: 768px and min-device-pixel-ratio: 3)"
-          />
-          <source srcset="./images/about/webp/about-cow-desktop.webp" media="(min-width: 1280px)" />
-          <source
-            srcset="./images/about/webp/about-cow-desktop@2x.webp"
-            media="(min-width: 1280px and min-device-pixel-ratio: 2)"
-          />
-          <source
-            srcset="./images/about/webp/about-cow-desktop@3x.webp"
-            media="(min-width: 1280px and min-device-pixel-ratio: 3)"
-          />
-          <img src="./images/about/webp/about-cow-mobile.webp" alt="milk_cow" />
         </picture>
       </article>
       <article class="about__description">
