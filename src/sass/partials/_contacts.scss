@@ -1,1 +1,111 @@
 @use '../utils' as *;
+.contacts {
+  background-color: var(--bg-pink-light);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  &__flex {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+  &__container {
+    width: 220px;
+    position: relative;
+    padding: 2.625rem 1.25rem;
+    background: var(--bg-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--box-radius);
+    top: -84px;
+  }
+  &__category {
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+    &--first {
+      width: 5rem;
+      background: var(--bg-beige);
+    }
+    &--second {
+      width: 8.25rem;
+      background: var(--bg-green);
+    }
+  }
+  &__city-name {
+    margin-bottom: 0.625rem;
+    margin: 0;
+  }
+  &__opening-time {
+    padding-block: 1.5rem;
+    border-top: 1px solid var(--stroke);
+    border-bottom: 1px solid var(--stroke);
+    margin-block: 1.5rem;
+  }
+  &__weekend {
+    margin-top: 0.625rem;
+  }
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (min-width: $tablet-size) {
+  .contacts {
+    &__container {
+      padding: 3.125rem 2rem;
+    }
+    &__flex {
+      flex-direction: row;
+    }
+    &__category {
+      margin-bottom: 1.875rem;
+      &--first {
+        width: 4.563rem;
+        height: 1.75rem;
+      }
+      &--second {
+        width: 8.625rem;
+        height: 1.75rem;
+      }
+    }
+    &__city-name {
+      margin-bottom: 0.875rem;
+    }
+    &__opening-time {
+      padding-block: 1.875rem;
+      margin-block: 1.875rem;
+    }
+    &__weekend {
+      margin-top: 1rem;
+    }
+    &__button {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}
+@media (min-width: $desktop-size) {
+  .contacts {
+    &__flex {
+      gap: 2rem;
+    }
+    &__container {
+      width: 330px;
+      padding: 3.25rem 2.625rem 3.75rem;
+    }
+    &__category {
+      margin-bottom: 2rem;
+    }
+  }
+}
