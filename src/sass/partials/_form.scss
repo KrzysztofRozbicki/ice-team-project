@@ -250,7 +250,6 @@ input[type='number'] {
 
   &__textarea:hover,
   &__textarea:focus {
-    cursor: pointer;
     border-color: var(--text-pink);
   }
 
@@ -261,7 +260,6 @@ input[type='number'] {
 
   &__input:focus,
   &__input:hover {
-    cursor: pointer;
     border-color: var(--text-pink);
   }
 
