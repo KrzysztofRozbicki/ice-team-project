@@ -160,9 +160,6 @@ $start-gap: 29px;
     position: absolute;
     left: calc(50% - 10px);
     top: 0;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
   }
   &:after {
     content: '';
@@ -173,8 +170,5 @@ $start-gap: 29px;
     position: absolute;
     left: calc(50% + 10px);
     top: 0;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
   }
 }
