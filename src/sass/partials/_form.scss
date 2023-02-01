@@ -1,14 +1,35 @@
 @use '../utils' as *;
 
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .button-secondary--form {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 186px;
-  gap: 22px;
-  width: 160px;
   height: 44px;
-  gap: 28px;
+  text-transform: uppercase;
+  position: relative;
+  &::after {
+    content: 'Enjoy your meal';
+    display: none;
+  }
+  &:active {
+    color: transparent;
+  }
+  &:active::after {
+    display: inline;
+    color: white;
+    position: absolute;
+  }
 }
 
 .backdrop {
@@ -28,6 +49,22 @@
 }
 
 .modal {
+  &::-webkit-scrollbar {
+    width: 15px;
+  }
+  &::-webkit-scrollbar-track {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background: var(--bg-pink-light);
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--text-pink-light);
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    border: 3px solid var(--bg-pink-light);
+  }
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,7 +79,7 @@
   overflow: auto;
   border-radius: 22px;
 
-  &__tittle {
+  &__title {
     text-align: center;
     margin-top: 40px;
     color: var(--text-pink);
@@ -70,84 +107,86 @@
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 30px;
+  margin-right: 20px;
   justify-content: center;
 
-  &__order {
-    label {
-      display: block;
-      text-align: center;
-    }
-
-    input {
-      width: 100px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  }
-
-  &__ice-cream {
-    border-radius: 10px;
-    background-color: var(--bg-pink);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #c94566;
-  }
-
-  &__ice-coffee {
-    border-radius: 10px;
-    background-color: var(--bg-beige);
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #997036;
-  }
-
-  &__milkshakes {
-    border-radius: 10px;
-    background-color: var(--bg-green);
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #648a32;
-  }
-
-  &__choose-option {
+  &__container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    color: grey;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
   }
 
-  &__sub-tittle {
-    margin-top: 10px;
+  &__order-box {
+    color: var(--text-white);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+
+    &--ice-cream-colors {
+      background-color: var(--bg-pink);
+      border: 2px solid #f88ca5;
+    }
+
+    &--ice-coffee-colors {
+      background-color: var(--bg-beige);
+      border: 2px solid #e8c086;
+    }
+
+    &--milkshakes-colors {
+      background-color: var(--bg-green);
+      border: 2px solid #acd17b;
+    }
+  }
+
+  &__amount {
+    border-radius: 10px;
+    outline: none;
     text-align: center;
-    color: var(--text-pink);
+    width: 40px;
+    color: var(--text-gray);
+    &--ice-cream-border {
+      border: 2px solid #f88ca5;
+    }
+
+    &--ice-coffee-border {
+      border: 2px solid #e8c086;
+    }
+
+    &--milkshakes-border {
+      border: 2px solid #acd17b;
+    }
   }
 
   &__box {
     position: relative;
   }
 
-  &__box:focus-within,
-  &__box:hover {
-    fill: var(--text-pink);
-  }
-
   &__label {
     display: block;
-    text-align: center;
     color: var(--text-pink);
     position: relative;
+    margin-top: 10px;
+    margin-left: 11px;
+    font-size: 18px;
   }
 
-  &__label {
-    display: block;
-    margin-top: 10px;
+  &__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 35px;
+    transition-property: border-color;
+    @extend .transition;
+    outline: none;
+    border-radius: 10px;
+    color: var(--text-gray);
   }
 
   &__icon-user {
@@ -158,6 +197,7 @@
     left: 15px;
     transition-property: fill;
     @extend .transition;
+    fill: var(--text-gray);
   }
 
   &__icon-mail {
@@ -168,22 +208,18 @@
     left: 13.5px;
     transition-property: fill;
     @extend .transition;
+    fill: var(--text-gray);
   }
 
-  &__input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-top: 4px;
-    padding-left: 42px;
-    transition-property: border-color;
+  &__icon-location {
+    width: 18px;
+    height: 22px;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    transition-property: fill;
     @extend .transition;
-  }
-
-  &__input:focus,
-  &__input:hover {
-    border-color: var(--text-pink);
+    fill: var(--text-gray);
   }
 
   &__icon-phone {
@@ -194,6 +230,7 @@
     left: 14.27px;
     transition-property: fill;
     @extend .transition;
+    fill: var(--text-gray);
   }
 
   &__textarea {
@@ -205,10 +242,133 @@
     resize: none;
     transition-property: border-color;
     @extend .transition;
+    outline: none;
+    padding-left: 35px;
+    border-radius: 10px;
+    color: var(--text-gray);
   }
 
   &__textarea:hover,
   &__textarea:focus {
+    cursor: pointer;
     border-color: var(--text-pink);
+  }
+
+  &__textarea:focus + &__icon-location,
+  &__textarea:hover + &__icon-location {
+    fill: var(--text-pink);
+  }
+
+  &__input:focus,
+  &__input:hover {
+    cursor: pointer;
+    border-color: var(--text-pink);
+  }
+
+  &__input:focus + &__icon-user,
+  &__input:hover + &__icon-user {
+    fill: var(--text-pink);
+  }
+
+  &__input:focus + &__icon-mail,
+  &__input:hover + &__icon-mail {
+    fill: var(--text-pink);
+  }
+
+  &__input:focus + &__icon-phone,
+  &__input:hover + &__icon-phone {
+    fill: var(--text-pink);
+  }
+
+  &__choose-option {
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    row-gap: 5px;
+    margin-top: 10px;
+    color: grey;
+    & > label {
+      position: relative;
+    }
+  }
+
+  &__sub-title {
+    margin-top: 10px;
+    color: var(--text-pink);
+    font-size: 18px;
+    margin-left: 11px;
+  }
+
+  &__payment-icon {
+    fill: var(--text-gray);
+    transition-property: fill;
+    @extend .transition;
+    &--cash {
+      left: 111%;
+      transform: translateY(20%);
+    }
+    &--paypal {
+      transform: translateY(10%);
+    }
+  }
+
+  &__checkbox-label {
+    transition-property: color;
+    @extend .transition;
+  }
+
+  &__checkbox-label:focus,
+  &__checkbox-label:hover {
+    color: var(--text-pink);
+    cursor: pointer;
+  }
+
+  &__checkbox-label:focus,
+  &__checkbox-label:hover > &__payment-icon {
+    fill: var(--text-pink);
+  }
+}
+.modal-form__order-box--ice-cream-colors::before {
+  content: '';
+  background-image: url('../images/products/ice-cream-mobile.png');
+  width: 15.56rem;
+  height: 15.75rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: scale(0.18) translate(-320%, -10%);
+}
+.modal-form__order-box--ice-coffee-colors::before {
+  content: '';
+  background-image: url('../images/products/coffee-mobile.png');
+  width: 15.56rem;
+  height: 15.75rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: scale(0.18) translate(-320%, -10%);
+}
+.modal-form__order-box--milkshakes-colors::before {
+  content: '';
+  background-image: url('../images/products/shake-mobile.png');
+  width: 15.56rem;
+  height: 15.75rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: scale(0.18) translate(-320%, -10%);
+}
+@media (min-width: $tablet-size) {
+  .modal-form__order-box--ice-cream-colors::before,
+  .modal-form__order-box--ice-coffee-colors::before,
+  .modal-form__order-box--milkshakes-colors::before {
+    transform: scale(0.22) translate(-270%, -10%);
+  }
+  .modal-form {
+    margin-left: 40px;
+    margin-right: 40px;
+    &__amount {
+      width: 80px;
+    }
+    &__choose-option {
+      flex-direction: row;
+    }
   }
 }
