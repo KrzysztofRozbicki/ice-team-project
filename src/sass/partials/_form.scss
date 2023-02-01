@@ -99,6 +99,9 @@
     &--milkshakes-colors {
       background-color: var(--bg-green);
       border: 2px solid #acd17b;
+      & > label {
+        z-index: 1;
+      }
     }
   }
 
@@ -121,14 +124,15 @@
 
   &__choose-option {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    // justify-content: space-around;
     margin-top: 10px;
     color: grey;
   }
 
   &__sub-title {
     margin-top: 10px;
-    text-align: center;
     color: var(--text-pink);
     font-size: 18px;
   }
@@ -224,7 +228,7 @@
   display: block;
   position: absolute;
   background-repeat: no-repeat;
-  right: -3.3rem;
+  right: -3.7rem;
   transform: scale(0.18) translateY(-10%);
 }
 .modal-form__order-box--ice-coffee-colors::before {
@@ -235,7 +239,7 @@
   display: block;
   position: absolute;
   background-repeat: no-repeat;
-  right: -3.3rem;
+  right: -3.7rem;
   transform: scale(0.18) translateY(-10%);
 }
 .modal-form__order-box--milkshakes-colors::before {
@@ -246,7 +250,7 @@
   display: block;
   position: absolute;
   background-repeat: no-repeat;
-  right: -3.3rem;
+  right: -3.7rem;
   transform: scale(0.18) translateY(-10%);
 }
 @media (min-width: $tablet-size) {
