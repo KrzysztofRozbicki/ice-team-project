@@ -276,6 +276,8 @@
     position: absolute;
     left: 105%;
     fill: var(--text-gray);
+    transition-property: fill;
+    @extend .transition;
     &--cash {
       left: 111%;
       transform: translateY(20%);
@@ -283,6 +285,11 @@
     &--paypal {
       transform: translateY(10%);
     }
+  }
+
+  &__checkbox-label {
+    transition-property: color;
+    @extend .transition;
   }
 
   &__checkbox-label:focus,
