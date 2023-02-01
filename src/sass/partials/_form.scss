@@ -6,6 +6,20 @@
   margin-right: auto;
   width: 186px;
   height: 44px;
+  text-transform: uppercase;
+  position: relative;
+  &::after {
+    content: 'Enjoy your meal';
+    display: none;
+  }
+  &:active {
+    color: transparent;
+  }
+  &:active::after {
+    display: inline;
+    color: white;
+    position: absolute;
+  }
 }
 
 .backdrop {
