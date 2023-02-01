@@ -5,10 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 186px;
-  gap: 22px;
-  width: 160px;
   height: 44px;
-  gap: 28px;
 }
 
 .backdrop {
@@ -42,7 +39,7 @@
   overflow: auto;
   border-radius: 22px;
 
-  &__tittle {
+  &__title {
     text-align: center;
     margin-top: 40px;
     color: var(--text-pink);
@@ -74,46 +71,52 @@
   margin-right: 40px;
   justify-content: center;
 
-  &__order {
-    label {
-      display: block;
-      text-align: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+  }
+
+  &__order-box {
+    color: var(--text-white);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--ice-cream-colors {
+      background-color: var(--bg-pink);
+      border: 2px solid #f88ca5;
     }
 
-    input {
-      width: 100px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10px;
-      margin-bottom: 10px;
+    &--ice-coffee-colors {
+      background-color: var(--bg-beige);
+      border: 2px solid #e8c086;
+    }
+
+    &--milkshakes-colors {
+      background-color: var(--bg-green);
+      border: 2px solid #acd17b;
     }
   }
 
-  &__ice-cream {
+  &__amount {
     border-radius: 10px;
-    background-color: var(--bg-pink);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #c94566;
-  }
+    outline: none;
+    text-align: center;
+    &--ice-cream-colors {
+      border: 2px solid #f88ca5;
+    }
 
-  &__ice-coffee {
-    border-radius: 10px;
-    background-color: var(--bg-beige);
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #997036;
-  }
+    &--ice-coffee-colors {
+      border: 2px solid #e8c086;
+    }
 
-  &__milkshakes {
-    border-radius: 10px;
-    background-color: var(--bg-green);
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #648a32;
+    &--milkshakes-colors {
+      border: 2px solid #acd17b;
+    }
   }
 
   &__choose-option {
@@ -123,7 +126,7 @@
     color: grey;
   }
 
-  &__sub-tittle {
+  &__sub-title {
     margin-top: 10px;
     text-align: center;
     color: var(--text-pink);
@@ -210,5 +213,47 @@
   &__textarea:hover,
   &__textarea:focus {
     border-color: var(--text-pink);
+  }
+}
+
+.modal-form__order-box--ice-cream-colors::before {
+  content: '';
+  background-image: url('../images/products/ice-cream-mobile.png');
+  width: 15.56rem;
+  height: 15.75rem;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: -3.3rem;
+  transform: scale(0.18) translateY(-10%);
+}
+.modal-form__order-box--ice-coffee-colors::before {
+  content: '';
+  background-image: url('../images/products/coffee-mobile.png');
+  width: 15.56rem;
+  height: 15.75rem;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: -3.3rem;
+  transform: scale(0.18) translateY(-10%);
+}
+.modal-form__order-box--milkshakes-colors::before {
+  content: '';
+  background-image: url('../images/products/shake-mobile.png');
+  width: 15.56rem;
+  height: 15.75rem;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: -3.3rem;
+  transform: scale(0.18) translateY(-10%);
+}
+@media (min-width: $tablet-size) {
+  .modal-form__order-box--ice-cream-colors::before,
+  .modal-form__order-box--ice-coffee-colors::before,
+  .modal-form__order-box--milkshakes-colors::before {
+    right: -2rem;
+    transform: scale(0.22) translateY(-10%);
   }
 }
