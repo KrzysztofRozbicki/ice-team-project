@@ -32,6 +32,10 @@
     height: 24px;
     transition: box-shadow 250ms ease-in-out, background-color 250ms ease-in-out;
 
+    a {
+      color: var(--text-pink);
+    }
+
     &:hover,
     &:focus {
       box-shadow: var(--text-pink-light) 0 5px 10px 5px;

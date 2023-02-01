@@ -237,6 +237,11 @@
       width: 114px;
     }
 
+    &__description-link {
+      border-radius: 50%;
+      width: fit-content;
+    }
+
     &__description-icon {
       display: flex;
       cursor: pointer;
