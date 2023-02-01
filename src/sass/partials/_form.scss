@@ -123,24 +123,6 @@
     }
   }
 
-  &__choose-option {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 5px;
-    margin-top: 10px;
-    color: grey;
-    & > label {
-      position: relative;
-    }
-  }
-
-  &__sub-title {
-    margin-top: 10px;
-    color: var(--text-pink);
-    font-size: 18px;
-  }
-
   &__box {
     position: relative;
   }
@@ -165,24 +147,7 @@
     @extend .transition;
     outline: none;
     border-radius: 10px;
-  }
-
-  &__input:focus,
-  &__input:hover + &__icon-user {
-    border-color: var(--text-pink);
-    fill: var(--text-pink);
-  }
-
-  &__input:focus,
-  &__input:hover + &__icon-mail {
-    border-color: var(--text-pink);
-    fill: var(--text-pink);
-  }
-
-  &__input:focus,
-  &__input:hover + &__icon-phone {
-    border-color: var(--text-pink);
-    fill: var(--text-pink);
+    color: var(--text-gray);
   }
 
   &__icon-user {
@@ -229,18 +194,6 @@
     fill: var(--text-gray);
   }
 
-  &__payment-icon {
-    position: absolute;
-    left: 105%;
-    fill: var(--text-gray);
-    &--cash {
-      left: 111%;
-      transform: translateY(20%);
-    }
-    &--paypal {
-      transform: translateY(10%);
-    }
-  }
   &__textarea {
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -253,11 +206,71 @@
     outline: none;
     padding-left: 35px;
     border-radius: 10px;
+    color: var(--text-gray);
   }
 
   &__textarea:hover,
   &__textarea:focus + &__icon-location {
     border-color: var(--text-pink);
+    fill: var(--text-pink);
+  }
+
+  &__input:focus,
+  &__input:hover + &__icon-user {
+    border-color: var(--text-pink);
+    fill: var(--text-pink);
+  }
+
+  &__input:focus,
+  &__input:hover + &__icon-mail {
+    border-color: var(--text-pink);
+    fill: var(--text-pink);
+  }
+
+  &__input:focus,
+  &__input:hover + &__icon-phone {
+    border-color: var(--text-pink);
+    fill: var(--text-pink);
+  }
+
+  &__choose-option {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 5px;
+    margin-top: 10px;
+    color: grey;
+    & > label {
+      position: relative;
+    }
+  }
+
+  &__sub-title {
+    margin-top: 10px;
+    color: var(--text-pink);
+    font-size: 18px;
+  }
+
+  &__payment-icon {
+    position: absolute;
+    left: 105%;
+    fill: var(--text-gray);
+    &--cash {
+      left: 111%;
+      transform: translateY(20%);
+    }
+    &--paypal {
+      transform: translateY(10%);
+    }
+  }
+
+  &__checkbox-label:focus,
+  &__checkbox-label:hover {
+    color: var(--text-pink);
+  }
+
+  &__checkbox-label:focus,
+  &__checkbox-label:hover > &__payment-icon {
     fill: var(--text-pink);
   }
 }
