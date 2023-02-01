@@ -109,6 +109,7 @@
     border-radius: 10px;
     outline: none;
     text-align: center;
+    color: var(--text-gray);
     &--ice-cream-colors {
       border: 2px solid #f88ca5;
     }
@@ -126,6 +127,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 40px;
+    row-gap: 5px;
     margin-top: 10px;
     color: grey;
     & > label {
@@ -143,11 +145,6 @@
     position: relative;
   }
 
-  &__box:focus-within,
-  &__box:hover {
-    fill: var(--text-pink);
-  }
-
   &__label {
     display: block;
     color: var(--text-pink);
@@ -155,36 +152,6 @@
     margin-top: 10px;
     margin-left: 11px;
     font-size: 18px;
-  }
-
-  &__icon-user {
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    bottom: 14px;
-    left: 15px;
-    transition-property: fill;
-    @extend .transition;
-  }
-
-  &__icon-mail {
-    width: 15px;
-    height: 12px;
-    position: absolute;
-    bottom: 14px;
-    left: 13.5px;
-    transition-property: fill;
-    @extend .transition;
-  }
-
-  &__icon-location {
-    width: 18px;
-    height: 22px;
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    transition-property: fill;
-    @extend .transition;
   }
 
   &__input {
@@ -197,11 +164,58 @@
     transition-property: border-color;
     @extend .transition;
     outline: none;
+    border-radius: 10px;
   }
 
   &__input:focus,
-  &__input:hover {
+  &__input:hover + &__icon-user {
     border-color: var(--text-pink);
+    fill: var(--text-pink);
+  }
+
+  &__input:focus,
+  &__input:hover + &__icon-mail {
+    border-color: var(--text-pink);
+    fill: var(--text-pink);
+  }
+
+  &__input:focus,
+  &__input:hover + &__icon-phone {
+    border-color: var(--text-pink);
+    fill: var(--text-pink);
+  }
+
+  &__icon-user {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+    transition-property: fill;
+    @extend .transition;
+    fill: var(--text-gray);
+  }
+
+  &__icon-mail {
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    bottom: 14px;
+    left: 13.5px;
+    transition-property: fill;
+    @extend .transition;
+    fill: var(--text-gray);
+  }
+
+  &__icon-location {
+    width: 18px;
+    height: 22px;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    transition-property: fill;
+    @extend .transition;
+    fill: var(--text-gray);
   }
 
   &__icon-phone {
@@ -212,14 +226,20 @@
     left: 14.27px;
     transition-property: fill;
     @extend .transition;
+    fill: var(--text-gray);
   }
 
-  &__icon-cash {
-    width: 12px;
-    height: 12px;
+  &__payment-icon {
     position: absolute;
-    left: 110%;
-    transform: translateY(20%);
+    left: 105%;
+    fill: var(--text-gray);
+    &--cash {
+      left: 111%;
+      transform: translateY(20%);
+    }
+    &--paypal {
+      transform: translateY(10%);
+    }
   }
   &__textarea {
     width: 100%;
@@ -232,11 +252,13 @@
     @extend .transition;
     outline: none;
     padding-left: 35px;
+    border-radius: 10px;
   }
 
   &__textarea:hover,
-  &__textarea:focus {
+  &__textarea:focus + &__icon-location {
     border-color: var(--text-pink);
+    fill: var(--text-pink);
   }
 }
 .modal-form__order-box--ice-cream-colors::before {
