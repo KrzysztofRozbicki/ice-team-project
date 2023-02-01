@@ -85,6 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 15px;
 
     &--ice-cream-colors {
       background-color: var(--bg-pink);
@@ -99,9 +100,6 @@
     &--milkshakes-colors {
       background-color: var(--bg-green);
       border: 2px solid #acd17b;
-      & > label {
-        z-index: 1;
-      }
     }
   }
 
@@ -284,44 +282,37 @@
     fill: var(--text-pink);
   }
 }
-/* .modal-form__order-box--ice-cream-colors::before {
+.modal-form__order-box--ice-cream-colors::before {
   content: '';
   background-image: url('../images/products/ice-cream-mobile.png');
   width: 15.56rem;
   height: 15.75rem;
-  display: block;
   position: absolute;
   background-repeat: no-repeat;
-  right: -3.7rem;
-  transform: scale(0.18) translateY(-10%);
+  transform: scale(0.18) translate(-320%, -10%);
 }
 .modal-form__order-box--ice-coffee-colors::before {
   content: '';
   background-image: url('../images/products/coffee-mobile.png');
   width: 15.56rem;
   height: 15.75rem;
-  display: block;
   position: absolute;
   background-repeat: no-repeat;
-  right: -3.7rem;
-  transform: scale(0.18) translateY(-10%);
+  transform: scale(0.18) translate(-320%, -10%);
 }
 .modal-form__order-box--milkshakes-colors::before {
   content: '';
   background-image: url('../images/products/shake-mobile.png');
   width: 15.56rem;
   height: 15.75rem;
-  display: block;
   position: absolute;
   background-repeat: no-repeat;
-  right: -3.7rem;
-  transform: scale(0.18) translateY(-10%);
+  transform: scale(0.18) translate(-320%, -10%);
 }
 @media (min-width: $tablet-size) {
   .modal-form__order-box--ice-cream-colors::before,
   .modal-form__order-box--ice-coffee-colors::before,
   .modal-form__order-box--milkshakes-colors::before {
-    right: -2rem;
-    transform: scale(0.22) translateY(-10%);
+    transform: scale(0.22) translate(-270%, -10%);
   }
-} */
+}
