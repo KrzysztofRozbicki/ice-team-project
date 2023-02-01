@@ -54,7 +54,7 @@
     align-items: center;
     gap: 1.88rem;
     text-align: center;
-    padding: 10.06rem 2.44rem 2.56rem 2.56rem;
+    padding: 10.06rem 2.44rem 6.875rem 2.56rem;
     &--bg1 {
       background-color: var(--bg-pink);
       position: relative;
@@ -97,8 +97,7 @@
     letter-spacing: 0.04em;
     padding: 2rem 1rem;
     transition-property: opacity;
-    transition-duration: 500ms;
-    transition-timing-function: linear;
+    @extend .transition;
     &--1 {
       color: #f88ca5;
     }
@@ -116,8 +115,7 @@
   position: absolute;
   bottom: 2.5rem;
   transition-property: transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  @extend .transition;
   &:hover,
   &:focus {
     transform: rotate(-90deg);
@@ -126,8 +124,7 @@
 .button-arrow--products:hover + .products-list__item-overlay,
 .button-arrow--products:focus + .products-list__item-overlay {
   transition-property: opacity;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
+  @extend .transition;
   opacity: 0.9;
 }
 .products-list__item--bg1::before {
@@ -194,7 +191,7 @@
     gap: 1.25rem;
     &__item {
       flex-basis: calc((100% - 40px) / 3);
-      padding: 9.5rem 0.69rem 2.5rem;
+      padding: 9.5rem 0.69rem 6.875rem;
     }
     &__item-overlay {
       font-size: 0.875rem;
@@ -262,7 +259,7 @@
     gap: 1.875rem;
     &__item {
       flex-basis: calc((100% - 60px) / 3);
-      padding: 10.19rem 2.75rem 3.125rem;
+      padding: 10.19rem 2.75rem 7.5rem;
       min-height: 32.81rem;
       gap: 2rem;
     }
