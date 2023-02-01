@@ -110,15 +110,15 @@
     outline: none;
     text-align: center;
     color: var(--text-gray);
-    &--ice-cream-colors {
+    &--ice-cream-border {
       border: 2px solid #f88ca5;
     }
 
-    &--ice-coffee-colors {
+    &--ice-coffee-border {
       border: 2px solid #e8c086;
     }
 
-    &--milkshakes-colors {
+    &--milkshakes-border {
       border: 2px solid #acd17b;
     }
   }
@@ -210,26 +210,34 @@
   }
 
   &__textarea:hover,
-  &__textarea:focus + &__icon-location {
+  &__textarea:focus {
+    cursor: pointer;
     border-color: var(--text-pink);
+  }
+
+  &__textarea:focus + &__icon-location,
+  &__textarea:hover + &__icon-location {
     fill: var(--text-pink);
   }
 
   &__input:focus,
+  &__input:hover {
+    cursor: pointer;
+    border-color: var(--text-pink);
+  }
+
+  &__input:focus + &__icon-user,
   &__input:hover + &__icon-user {
-    border-color: var(--text-pink);
     fill: var(--text-pink);
   }
 
-  &__input:focus,
+  &__input:focus + &__icon-mail,
   &__input:hover + &__icon-mail {
-    border-color: var(--text-pink);
     fill: var(--text-pink);
   }
 
-  &__input:focus,
+  &__input:focus + &__icon-phone,
   &__input:hover + &__icon-phone {
-    border-color: var(--text-pink);
     fill: var(--text-pink);
   }
 
@@ -249,6 +257,7 @@
     margin-top: 10px;
     color: var(--text-pink);
     font-size: 18px;
+    margin-left: 11px;
   }
 
   &__payment-icon {
@@ -267,6 +276,7 @@
   &__checkbox-label:focus,
   &__checkbox-label:hover {
     color: var(--text-pink);
+    cursor: pointer;
   }
 
   &__checkbox-label:focus,
@@ -274,7 +284,7 @@
     fill: var(--text-pink);
   }
 }
-.modal-form__order-box--ice-cream-colors::before {
+/* .modal-form__order-box--ice-cream-colors::before {
   content: '';
   background-image: url('../images/products/ice-cream-mobile.png');
   width: 15.56rem;
@@ -314,4 +324,4 @@
     right: -2rem;
     transform: scale(0.22) translateY(-10%);
   }
-}
+} */
