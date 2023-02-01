@@ -77,27 +77,41 @@
           id="email"
         />
       </div>
-      <label class="modal-form__label text-400" for="comments"> Address </label>
-      <input
-        class="modal-form__textarea"
-        name="comments"
-        type="text"
-        placeholder="31-419 Kraków ul. Rozrywka 1"
-        id="comments"
-      />
+      <div class="modal-form__box">
+        <label class="modal-form__label text-400" for="comments"> Address </label>
+        <svg class="modal-form__icon-location">
+          <use href="./images/icons.svg#icon-location"></use>
+        </svg>
+        <input
+          class="modal-form__textarea"
+          name="comments"
+          type="text"
+          placeholder="31-419 Kraków ul. Rozrywka 1"
+          id="comments"
+        />
+      </div>
       <p class="modal-form__sub-title text-400">Payment Options</p>
       <div class="modal-form__choose-option">
         <label>
           <input type="radio" name="payment" value="cash" checked />
           Cash
+          <svg class="modal-form__icon-cash">
+            <use href="./images/icons.svg#icon-cash"></use>
+          </svg>
         </label>
         <label>
           <input type="radio" name="payment" value="card" />
           Pay Cards
+          <svg class="modal-form__icon-cash">
+            <use href="./images/icons.svg#icon-credit-card"></use>
+          </svg>
         </label>
         <label>
           <input type="radio" name="payment" value="paypal" />
           PayPal
+          <svg class="modal-form__icon-cash">
+            <use href="./images/icons.svg#icon-paypal"></use>
+          </svg>
         </label>
       </div>
       <button type="button" class="button-secondary button-500 button-secondary--form">
