@@ -130,6 +130,7 @@
     margin-top: 10px;
     text-align: center;
     color: var(--text-pink);
+    font-size: 18px;
   }
 
   &__box {
@@ -143,14 +144,11 @@
 
   &__label {
     display: block;
-    text-align: center;
     color: var(--text-pink);
     position: relative;
-  }
-
-  &__label {
-    display: block;
     margin-top: 10px;
+    margin-left: 11px;
+    font-size: 18px;
   }
 
   &__icon-user {
@@ -182,6 +180,7 @@
     padding-left: 42px;
     transition-property: border-color;
     @extend .transition;
+    outline: none;
   }
 
   &__input:focus,
@@ -208,6 +207,7 @@
     resize: none;
     transition-property: border-color;
     @extend .transition;
+    outline: none;
   }
 
   &__textarea:hover,
