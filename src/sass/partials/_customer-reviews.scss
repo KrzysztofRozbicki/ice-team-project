@@ -14,7 +14,7 @@ $start-gap: 29px;
     padding-top: 43px;
     margin-bottom: 15px;
     // padding: 43px 50px 26px;
-    &--wrapper {
+    &__wrapper {
       background-image: repeating-linear-gradient(
         var(--bg-gray) $start-gap,
         var(--stroke) 0px,
@@ -107,7 +107,7 @@ $start-gap: 29px;
     &__article {
       background-color: var(--bg-gray);
       padding-bottom: 30px;
-      &--wrapper {
+      &__wrapper {
         max-width: 800px;
         padding-bottom: 2px;
         background-image: repeating-linear-gradient(
