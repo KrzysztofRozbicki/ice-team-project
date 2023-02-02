@@ -129,7 +129,7 @@
 }
 .products-list__item--bg1::before {
   content: '';
-  background-image: url('../images/products/ice-cream-mobile.png');
+  background-image: url('../images/products/webp/ice-cream-mobile.webp');
   width: 15.56rem;
   height: 15.75rem;
   display: block;
@@ -139,7 +139,7 @@
 }
 .products-list__item--bg2::before {
   content: '';
-  background-image: url('../images/products/coffee-mobile.png');
+  background-image: url('../images/products/webp/coffee-mobile.webp');
   width: 15.56rem;
   height: 15.75rem;
   display: block;
@@ -149,7 +149,7 @@
 }
 .products-list__item--bg3::before {
   content: '';
-  background-image: url('../images/products/shake-mobile.png');
+  background-image: url('../images/products/webp/shake-mobile.webp');
   background-size: 15.56rem 15.75rem;
   width: 15.56rem;
   height: 15.75rem;
@@ -201,21 +201,21 @@
     }
   }
   .products-list__item--bg1::before {
-    background-image: url('../images/products/ice-cream-tablet.png');
+    background-image: url('../images/products/webp/ice-cream-tablet.webp');
     background-size: 13.75rem 14.125rem;
     width: 13.75rem;
     height: 14.125rem;
     top: -6.5rem;
   }
   .products-list__item--bg2::before {
-    background-image: url('../images/products/coffee-tablet.png');
+    background-image: url('../images/products/webp/coffee-tablet.webp');
     background-size: 13.75rem 14.56rem;
     width: 13.75rem;
     height: 14.56rem;
     top: -6.94rem;
   }
   .products-list__item--bg3::before {
-    background-image: url('../images/products/shake-tablet.png');
+    background-image: url('../images/products/webp/shake-tablet.webp');
     background-size: 13.75rem 14rem;
     width: 13.75rem;
     height: 14rem;
@@ -277,21 +277,21 @@
     bottom: 3.125rem;
   }
   .products-list__item--bg1::before {
-    background-image: url('../images/products/ice-cream-dekstop.png');
+    background-image: url('../images/products/webp/ice-cream-dekstop.webp');
     background-size: 20.94rem 20.94rem;
     width: 20.94rem;
     height: 20.94rem;
     top: -13.125rem;
   }
   .products-list__item--bg2::before {
-    background-image: url('../images/products/coffee-desktop.png');
+    background-image: url('../images/products/webp/coffee-desktop.webp');
     background-size: 21.06rem 20.94rem;
     width: 21.06rem;
     height: 20.94rem;
     top: -13.125rem;
   }
   .products-list__item--bg3::before {
-    background-image: url('../images/products/shake-desktop.png');
+    background-image: url('../images/products/webp/shake-desktop.webp');
     background-size: 20.94rem 20.94rem;
     width: 20.94rem;
     height: 20.94rem;
