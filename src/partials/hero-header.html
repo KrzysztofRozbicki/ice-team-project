@@ -72,7 +72,7 @@
     <div class="header__buttons">
       <button
         class="button-secondary button-secondary--header text-200"
-        onclick="location.href='#products'"
+        onClick="location.href='#products'"
         type="button"
       >
         Products
@@ -80,7 +80,7 @@
 
       <button
         class="button-primary button-primary--header text-200"
-        onclick="location.href='#about-us'"
+        onClick="location.href='#about-us'"
         type="button"
       >
         How it's made?
@@ -92,13 +92,12 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </p>
-      <a class="header__description-link" href="#contact">
-        <button class="header__description-icon" type="button">
-          <svg width="7" height="7" fill="currentColor">
-            <use href="images/icons.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-      </a>
+
+      <button class="header__description-button" onClick="location.href='#contact'" type="button">
+        <svg width="7" height="7" fill="currentColor">
+          <use href="images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
     </div>
 
     <div class="header__circle-bg"></div>
