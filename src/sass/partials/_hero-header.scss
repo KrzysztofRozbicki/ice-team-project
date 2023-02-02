@@ -22,6 +22,7 @@
 
   &__article-main {
     flex-basis: 220px;
+    animation: fadeIn 1250ms 1, slide-from-left 500ms 1;
   }
 
   &__article-numbers {
@@ -51,6 +52,7 @@
     background-color: var(--text-pink-light);
     transition: left 1250ms ease-in-out;
     z-index: 0;
+    @include animation-mixin(scale-up, 500ms, 1);
   }
 
   &__hero-ice-cream {
@@ -237,12 +239,7 @@
       width: 114px;
     }
 
-    &__description-link {
-      border-radius: 50%;
-      width: fit-content;
-    }
-
-    &__description-icon {
+    &__description-button {
       display: flex;
       cursor: pointer;
       justify-content: center;
@@ -293,7 +290,8 @@
       height: auto;
       display: block;
       opacity: 1;
-      transition: opacity 1000ms ease-in-out;
+      // transition: opacity 1000ms ease-in-out;
+      @include animation-mixin(fadeIn, 1250ms, 1);
     }
 
     &__hero-milk {
@@ -304,6 +302,7 @@
       width: 124px;
       height: auto;
       display: block;
+      @include animation-mixin(spin, 250ms, 1);
     }
   }
 
@@ -393,7 +392,7 @@
       // background-color: red;
     }
 
-    &__description-icon {
+    &__description-button {
       width: 26px;
       height: 26px;
       border-radius: 50%;
