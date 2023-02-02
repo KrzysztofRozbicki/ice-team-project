@@ -67,7 +67,6 @@ $start-gap: 29px;
       top: -55px;
       left: calc(50% - 11px);
     }
-
   }
 }
 
@@ -76,7 +75,7 @@ $start-gap: 29px;
     &__article {
       background-color: var(--text-white);
       padding-bottom: 0;
-      &--wrapper {
+      &__wrapper {
         max-width: 490px;
         background-image: repeating-linear-gradient(
           var(--text-white) $start-gap,
@@ -170,5 +169,26 @@ $start-gap: 29px;
     position: absolute;
     top: 0;
     left: 50%;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    background-image: url('../images/reviews-ellipse.svg');
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    background-image: url('../images/reviews-ellipse.svg');
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: calc(50% + 10px);
+    top: 0;
   }
 }
